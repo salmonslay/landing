@@ -1,0 +1,160 @@
+{
+  "projects": [
+    {
+      "title": "Galtaker",
+      "description": "Sokoban-inspired Unity game made for a game jam. Has localization through Crowdin, Steam achievements and an art gallery.",
+      "thumbnail": "img/galtaker.png",
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          "Steamworks",
+          "Crowdin"
+        ]
+      },
+      "links": [
+      ]
+    },
+    {
+      "title": "svb!catch",
+      "description": "Web game based on osu!. Contains 200+ full beatmaps with music, 8 mods, online profiles and a custom difficulty system.",
+      "thumbnail": "img/svb!catch.png",
+      "tags": {
+        "engine": [
+          "Express"
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+          "Node.js",
+          "MySQL"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://svb.sajber.me/catch"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SVB"
+        }
+      ]
+    },
+    {
+      "title": "SVB",
+      "description": "News website based on SVT. Features online profiles with different privileged roles, game leaderboards and more.",
+      "thumbnail": "img/svb.png",
+      "tags": {
+        "engine": [
+          "Express"
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+          "Node.js",
+          "MySQL"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://svb.sajber.me"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SVB"
+        }
+      ]
+    },
+    {
+      "title": "SajberRoyale",
+      "description": "3D battle royale game made in Unity. Features a custom map with 35+ unique rooms, online statistics and 100+ modelled assets.",
+      "thumbnail": "img/sajberroyale.png",
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          "Photon",
+          "Json.NET"
+        ]
+      },
+      "links": [
+        {
+          "title": "Leaderboards",
+          "url": "https://svb.sajber.me/sajberroyale"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyInc/SajberRoyale"
+        },
+        {
+          "title": "Trailer",
+          "url": "https://www.youtube.com/watch?v=o4A-ihfCpEE"
+        }
+      ]
+    },
+    {
+      "title": "Dishooks",
+      "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
+      "thumbnail": "img/dishooks.png",
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          "Json.NET"
+        ]
+      },
+      "links": [
+        {
+          "title": "Unity Asset Store",
+          "url": "https://assetstore.unity.com/packages/tools/network/dishooks-send-discord-messages-from-your-game-171381"
+        },
+        {
+          "title": "Documentation",
+          "url": "https://docs.google.com/document/d/1NdS7aQ-MTxTG1lF6od-VRcH0xsJGoaYjlREWVvrJqfc/edit"
+        }
+      ]
+    },
+    {
+      "title": "IKIMONO",
+      "description": "Pet simulator for Android made in Unity. Includes minigames, offline needs, a saving system and more.",
+      "thumbnail": "img/ikimono.png",
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          "Json.NET"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://play.google.com/store/apps/details?id=com.G3.IKIMONO"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/IKIMONO"
+        }
+      ]
+    }
+  ]
+}
