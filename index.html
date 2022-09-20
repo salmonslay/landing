@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fabian Lindgren | Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="sajber.me">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+    <link rel="stylesheet" href="style/sajber.me.css">
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2db49cb13f.js" crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="container">
+
+<div id="banner">
+    <h1>Hi, I'm
+        <span class="accent">Fabian Lindgren</span>
+    </h1>
+    <p>I'm currently studying Computer and Systems Sciences at Stockholm University.</p>
+
+    <div class="social-icons">
+        <a class="icon" href="https://github.com/LiterallyFabian" target="_blank">
+            <i class="fa-brands fa-github fa-2xl"></i>
+        </a>
+
+        <a class="icon" href="mailto:lindgrenfabian@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+        </a>
+
+        <a class="icon" href="https://www.linkedin.com/in/lindgrenfabian/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </a>
+
+        <a class="icon" href="https://twitter.com/literallyfabian/" target="_blank">
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+        </a>
+
+        <a class="icon" href="https://stackoverflow.com/users/11420970" target="_blank">
+            <i class="fa-brands fa-stack-overflow fa-2xl"></i>
+        </a>
+
+        <a class="icon" href="https://steamcommunity.com/id/literallyfabian/" target="_blank">
+            <i class="fa-brands fa-steam fa-2xl"></i>
+        </a>
+    </div>
+
+    <hr>
+
+    <div class="navbar">
+        <a class="active" onclick="setPage('projects')">Projects</a>
+        <a onclick="setPage('stack')">Stack</a>
+        <a onclick="setPage('about')">About</a>
+    </div>
+</div>
+
+<div class="page" id="projects">
+    <ol class="gallery">
+        <li>
+            <figure>
+                <img class="thumbnail" src="img/galtaker.png" alt="Galtaker">
+                <figcaption>
+                    <p>Galtaker</p>
+                    <p>Sokoban-inspired Unity game made for a game jam. Has localization through Crowdin, Steam achievements and an art gallery.</p>
+                    <div class="pills">
+                        <span class="pill engine">Unity</span>
+                        <span class="pill language">C#</span>
+                        <span class="pill framework">Steamworks</span>
+                        <span class="pill framework">Crowdin</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img class="thumbnail" src="img/svb!catch.png" alt="svb!catch">
+                <figcaption>
+                    <p>svb!catch</p>
+                    <p>Web game based on osu!. Contains 200+ full beatmaps with music, 8 mods, online profiles and a custom difficulty system.</p>
+                    <div class="pills">
+                        <span class="pill engine">Express</span>
+                        <span class="pill language">JavaScript</span>
+                        <span class="pill framework">Node.js</span>
+                        <span class="pill framework">MySQL</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img class="thumbnail" src="img/svb.png" alt="SVB">
+                <figcaption>
+                    <p>SVB</p>
+                    <p>News website based on SVT. Features online profiles with different privileged roles, game leaderboards and more.</p>
+                    <div class="pills">
+                        <span class="pill engine">Express</span>
+                        <span class="pill language">JavaScript</span>
+                        <span class="pill framework">Node.js</span>
+                        <span class="pill framework">MySQL</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img class="thumbnail" src="img/sajberroyale.png" alt="SajberRoyale">
+                <figcaption>
+                    <p>SajberRoyale</p>
+                    <p>3D battle royale game made in Unity. Features a custom map with 35+ unique rooms, online statistics and 100+ modelled assets.</p>
+                    <div class="pills">
+                        <span class="pill engine">Unity</span>
+                        <span class="pill language">C#</span>
+                        <span class="pill framework">Photon</span>
+                        <span class="pill framework">Json.NET</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img class="thumbnail" src="img/dishooks.png" alt="Dishooks">
+                <figcaption>
+                    <p>Dishooks</p>
+                    <p>C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.</p>
+                    <div class="pills">
+                        <span class="pill engine">Unity</span>
+                        <span class="pill language">C#</span>
+                        <span class="pill framework">Json.NET</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img class="thumbnail" src="img/ikimono.png" alt="IKIMONO">
+                <figcaption>
+                    <p>IKIMONO</p>
+                    <p>Pet simulator for Android made in Unity. Includes minigames, offline needs, a saving system and more.</p>
+                    <div class="pills">
+                        <span class="pill engine">Unity</span>
+                        <span class="pill language">C#</span>
+                        <span class="pill framework">Json.NET</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+    </ol>
+</div>
+
+<div class="page d-none" id="stack">
+    stack
+</div>
+
+<div class="page d-none" id="about">
+    about
+</div>
+
+</body>
+</div>
+
+</html>

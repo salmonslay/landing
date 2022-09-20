@@ -1,0 +1,89 @@
+$background-color: #f2f2f2;
+$foreground-color: #fff;
+$text-color: #1f1f1f;
+$accent-color: #ce4a5c;
+
+@import "gallery";
+
+html {
+  height: 100%;
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.d-none {
+  display: none !important;
+}
+
+body {
+  font: 17px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 2em;
+
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  #projects {
+    max-width: 90%;
+    margin: 2em auto;
+  }
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      padding: 10px;
+      margin: 10px;
+      color: $text-color;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+
+.navbar {
+  a {
+    color: #1f1f1f;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      font-weight: bold;
+      color: $accent-color;
+    }
+  }
+}

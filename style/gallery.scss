@@ -1,0 +1,84 @@
+ol.gallery, {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  list-style: none;
+  padding: 0 0 100px 0;
+
+  li {
+    background: $foreground-color;
+    border-radius: 15px;
+    box-shadow: 4px 5px 5px rgb(0 0 0 / 10%);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    max-width: 300px;
+
+    &:after {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    &:hover {
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    figure {
+      margin: 0;
+      grid-gap: 1.5rem;
+      grid-template-columns: 150px 1fr;
+      align-items: center;
+
+      img {
+        border-radius: 15px;
+        display: block;
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+      }
+
+      figcaption {
+        padding: 0.8rem;
+
+        p {
+          margin: 0.5em 0;
+
+          &:first-child {
+            font-weight: bold;
+            color: $accent-color;
+          }
+        }
+
+        .pills {
+          .pill {
+            display: inline-block;
+            padding: 0.2em 0.5em;
+            margin: 0.2em;
+            border-radius: 0.2em;
+            background-color: $accent-color;
+            color: $foreground-color;
+            font-size: 0.8em;
+
+            &.engine {
+              background-color: #41CFD9;
+            }
+
+            &.language {
+              background-color: #A541D9;
+            }
+
+            &.framework {
+              background-color: #546BF0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
