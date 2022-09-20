@@ -47,33 +47,6 @@
       ]
     },
     {
-      "title": "SVB",
-      "description": "News website based on SVT. Features online profiles with different privileged roles, game leaderboards and more.",
-      "thumbnail": "img/svb.png",
-      "tags": {
-        "engine": [
-          "Node.js"
-        ],
-        "language": [
-          "JavaScript"
-        ],
-        "framework": [
-          "Express",
-          "MySQL"
-        ]
-      },
-      "links": [
-        {
-          "title": "View",
-          "url": "https://svb.sajber.me"
-        },
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/SVB"
-        }
-      ]
-    },
-    {
       "title": "SajberRoyale",
       "description": "3D battle royale game made in Unity. Features a custom map with 35+ unique rooms, online statistics and 100+ modelled assets.",
       "thumbnail": "img/sajberroyale.png",
@@ -180,6 +153,33 @@
       ]
     },
     {
+      "title": "SVB",
+      "description": "News website based on SVT. Features online profiles with different privileged roles, game leaderboards and more.",
+      "thumbnail": "img/svb.png",
+      "tags": {
+        "engine": [
+          "Node.js"
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+          "Express",
+          "MySQL"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://svb.sajber.me"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SVB"
+        }
+      ]
+    },
+    {
       "title": "SajberSim",
       "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
       "thumbnail": "img/sajbersim.png",
@@ -239,6 +239,171 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/taiko-flip"
+        }
+      ]
+    },
+    {
+      "title": "Galhooks",
+      "description": "A simple web server to automatically fetch, save and display Unity Cloud Builds.",
+      "thumbnail": "img/galhooks.png",
+      "tags": {
+        "engine": [
+          "Node.js"
+        ],
+        "language": [
+          "JavaScript",
+          "EJS"
+        ],
+        "framework": [
+          "Express",
+          "MySQL"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/Galhooks"
+        }
+      ]
+    },
+    {
+      "title": "This website",
+      "description": "The website you're currently on. Made with HTML, JS and SCSS, projects are saved with JSON.",
+      "thumbnail": "img/website.png",
+      "tags": {
+        "engine": [
+        ],
+        "language": [
+          "JavaScript",
+          "HTML",
+          "SCSS"
+        ],
+        "framework": [
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://sajber.me"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/landing"
+        }
+      ]
+    },
+    {
+      "title": "Interrupted Silence",
+      "description": "Tiny application that automatically plays a random sound at random intervals. Made for [babehog](https://www.twitch.tv/babehog).",
+      "thumbnail": "img/is.png",
+      "tags": {
+        "engine": [
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          ".NET",
+          "WinForms"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/Sonya/tree/master/InterruptedSilence"
+        }
+      ]
+    },
+    {
+      "title": "MAL-Scraper",
+      "description": "A simple web scraper for MyAnimeList, scraping characters and their respective media. Has a web interface, automated cloud backup and tools for renaming/removing duplicates.",
+      "thumbnail": "img/mal-scraper.png",
+      "tags": {
+        "engine": [
+          "Node.js"
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+          "Express",
+          "MySQL",
+          "Cloudinary"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/MAL-Scraper"
+        }
+      ]
+    },
+    {
+      "title": "SaltBot-Gacha",
+      "description": "Gacha module for SaltBot, inspired by Mudae. Features rolls, wishlisting, loot boxes and more. Discontinued and never published.",
+      "thumbnail": "img/saltbot-gacha.png",
+      "tags": {
+        "engine": [
+          "Node.js"
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+          "discord.js",
+          "MySQL"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SaltBot-Gacha"
+        }
+      ]
+    },
+    {
+      "title": "auto-starquiz",
+      "description": "A simple script that automatically answers questions in the MSP2 minigame Star Quiz. Monitors the game web socket and comparing data to a known answer list.",
+      "thumbnail": "img/auto-starquiz.png",
+      "tags": {
+        "engine": [
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/auto-starquiz"
+        },
+        {
+          "title": "Video",
+          "url": "https://www.youtube.com/watch?v=2A0kKcAAZNs"
+        }
+      ]
+    },
+    {
+      "title": "discord-stats",
+      "description": "Python script that counts word occurrences from a Discord user and plots their texting frequency.",
+      "thumbnail": "img/discord-stats.png",
+      "tags": {
+        "engine": [
+        ],
+        "language": [
+          "Python"
+        ],
+        "framework": [
+          "pandas",
+          "matplotlib"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/discord-stats"
         }
       ]
     }
