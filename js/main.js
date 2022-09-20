@@ -54,7 +54,10 @@ function loadProjects() {
                 let html = `
                     <li>
                         <figure>
-                            <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
+                            <div class="parent">
+                                ${project.starred ? `<i title="Large / important project" class="fas fa-star star"></i>` : ``}
+                                <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
+                            </div>
                             <figcaption>
                                 <p>${project.title}</p>
                                 <p>${mdToHtml(project.description)}</p>

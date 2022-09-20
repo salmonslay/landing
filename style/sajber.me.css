@@ -32,7 +32,17 @@ ol.gallery li figure {
   grid-template-columns: 150px 1fr;
   align-items: center;
 }
-ol.gallery li figure img {
+ol.gallery li figure .parent {
+  border: 0;
+  position: relative;
+}
+ol.gallery li figure .parent .star {
+  padding: 2%;
+  position: absolute;
+  color: #D68D33;
+  filter: drop-shadow(3px 3px 4px #000);
+}
+ol.gallery li figure .parent img {
   border-radius: 15px;
   display: block;
   width: 100%;

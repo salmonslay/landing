@@ -4,6 +4,7 @@
       "title": "Galtaker",
       "description": "Sokoban-inspired Unity game made for a game jam. Features localization with Crowdin, Steam achievements and an art gallery.",
       "thumbnail": "img/galtaker.png",
+      "starred": true,
       "tags": {
         "engine": [
           "Unity"
@@ -23,6 +24,7 @@
       "title": "svb!catch",
       "description": "Web game based on osu!. Contains 200+ full beatmaps with music, 8 mods, online profiles and a custom difficulty system.",
       "thumbnail": "img/svb!catch.png",
+      "starred": true,
       "tags": {
         "engine": [
           "Node.js"
@@ -50,6 +52,7 @@
       "title": "SajberRoyale",
       "description": "3D battle royale game made in Unity. Features a custom map with 35+ unique rooms, online statistics and 100+ modelled assets.",
       "thumbnail": "img/sajberroyale.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Unity"
@@ -81,6 +84,7 @@
       "title": "Dishooks",
       "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
       "thumbnail": "img/dishooks.png",
+      "starred": true,
       "tags": {
         "engine": [
           "Unity"
@@ -107,6 +111,7 @@
       "title": "IKIMONO",
       "description": "Pet simulator for Android made in Unity. Includes minigames, offline needs and a custom saving system.",
       "thumbnail": "img/ikimono.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Unity"
@@ -133,6 +138,7 @@
       "title": "SaltBot",
       "description": "Discord bot made with discord.js with over 10,000 invites. Features 90+ commands, fictive battles, image manipulation and more.",
       "thumbnail": "img/saltbot.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -156,6 +162,7 @@
       "title": "SVB",
       "description": "News website based on SVT. Features online profiles with different privileged roles, game leaderboards and more.",
       "thumbnail": "img/svb.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -183,6 +190,7 @@
       "title": "SajberSim",
       "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
       "thumbnail": "img/sajbersim.png",
+      "starred": true,
       "tags": {
         "engine": [
           "Unity"
@@ -206,6 +214,7 @@
       "title": "SpiderForest",
       "description": "Unity platformer made at Stockholm University. Features 5 levels, a boss cutscene and custom made assets.",
       "thumbnail": "img/spiderforest.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Unity"
@@ -225,6 +234,7 @@
       "title": "Charge the beat",
       "description": "Unity taiko rhythm game made for a game jam. Full support for osu!taiko beatmaps and up to 4 players.",
       "thumbnail": "img/ctb.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Unity"
@@ -246,6 +256,7 @@
       "title": "Galhooks",
       "description": "A simple web server to automatically fetch, save and display Unity Cloud Builds.",
       "thumbnail": "img/galhooks.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -270,6 +281,7 @@
       "title": "This website",
       "description": "The website you're currently on. Made with HTML, JS and SCSS, projects are saved with JSON.",
       "thumbnail": "img/website.png",
+      "starred": false,
       "tags": {
         "engine": [
         ],
@@ -296,6 +308,7 @@
       "title": "Interrupted Silence",
       "description": "Tiny application that automatically plays a random sound at random intervals. Made for [babehog](https://www.twitch.tv/babehog).",
       "thumbnail": "img/is.png",
+      "starred": false,
       "tags": {
         "engine": [
         ],
@@ -318,6 +331,7 @@
       "title": "MAL-Scraper",
       "description": "A simple web scraper for MyAnimeList, scraping characters and their respective media. Has a web interface, automated cloud backup and tools for renaming/removing duplicates.",
       "thumbnail": "img/mal-scraper.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -342,6 +356,7 @@
       "title": "SaltBot-Gacha",
       "description": "Gacha module for SaltBot, inspired by Mudae. Features rolls, wishlisting, loot boxes and more. Discontinued and never published.",
       "thumbnail": "img/saltbot-gacha.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -365,6 +380,7 @@
       "title": "auto-starquiz",
       "description": "A simple script that automatically answers questions in the MSP2 minigame Star Quiz. Monitors the game web socket and comparing data to a known answer list.",
       "thumbnail": "img/auto-starquiz.png",
+      "starred": false,
       "tags": {
         "engine": [
         ],
@@ -389,6 +405,7 @@
       "title": "discord-stats",
       "description": "Python script that counts word occurrences from a Discord user and plots their texting frequency.",
       "thumbnail": "img/discord-stats.png",
+      "starred": false,
       "tags": {
         "engine": [
         ],
