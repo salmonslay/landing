@@ -1,3 +1,7 @@
+$color-engine: #41CFD9;
+$color-language: #A541D9;
+$color-framework: #546BF0;
+
 ol.gallery, {
   display: grid;
   grid-gap: 2rem;
@@ -61,24 +65,68 @@ ol.gallery, {
             padding: 0.2em 0.5em;
             margin: 0.2em;
             border-radius: 0.2em;
+            color: $foreground-color;
+            font-size: 0.8em;
+          }
+        }
+
+        .buttons {
+          padding: 5px 0 0 0;
+
+          a.button {
+            display: inline-block;
+            padding: 0.5em 0.5em;
+            margin: 0.2em;
+            border-radius: 0.2em;
             background-color: $accent-color;
             color: $foreground-color;
             font-size: 0.8em;
+            text-decoration: none;
 
-            &.engine {
-              background-color: #41CFD9;
-            }
-
-            &.language {
-              background-color: #A541D9;
-            }
-
-            &.framework {
-              background-color: #546BF0;
+            &:hover {
+              background-color: darken($accent-color, 10%);
             }
           }
         }
       }
     }
   }
+}
+
+.color-legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+
+  .color-legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5rem;
+
+    .color-legend-item-color {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .color-legend-item-text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.color-engine {
+  background-color: $color-engine;
+}
+
+.color-language {
+  background-color: $color-language;
+}
+
+.color-framework {
+  background-color: $color-framework;
 }

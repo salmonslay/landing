@@ -54,17 +54,57 @@ ol.gallery li figure figcaption .pills .pill {
   padding: 0.2em 0.5em;
   margin: 0.2em;
   border-radius: 0.2em;
-  background-color: #ce4a5c;
   color: #fff;
   font-size: 0.8em;
 }
-ol.gallery li figure figcaption .pills .pill.engine {
+ol.gallery li figure figcaption .buttons {
+  padding: 5px 0 0 0;
+}
+ol.gallery li figure figcaption .buttons a.button {
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  margin: 0.2em;
+  border-radius: 0.2em;
+  background-color: #ce4a5c;
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+ol.gallery li figure figcaption .buttons a.button:hover {
+  background-color: #b43143;
+}
+
+.color-legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.color-legend .color-legend-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.color-legend .color-legend-item .color-legend-item-color {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+.color-legend .color-legend-item .color-legend-item-text {
+  font-size: 0.8rem;
+}
+
+.color-engine {
   background-color: #41CFD9;
 }
-ol.gallery li figure figcaption .pills .pill.language {
+
+.color-language {
   background-color: #A541D9;
 }
-ol.gallery li figure figcaption .pills .pill.framework {
+
+.color-framework {
   background-color: #546BF0;
 }
 
