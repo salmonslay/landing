@@ -7,7 +7,8 @@ ol.gallery, {
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   list-style: none;
-  padding: 0 0 100px 0;
+  justify-items: center;
+  padding: 0 20px 100px 20px; // 100 to add some spacing under everything
 
   li {
     background: $foreground-color;
