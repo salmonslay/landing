@@ -55,13 +55,15 @@
     <hr>
 
     <div class="navbar">
-        <a class="active" onclick="setPage('projects')">Projects</a>
-        <a onclick="setPage('stack')">Stack</a>
-        <a onclick="setPage('about')">About</a>
+        <a id="button-projects" class="nav-button active" onclick="setPage('projects')">Projects</a>
+        <a id="button-stack" class="nav-button" onclick="setPage('stack')">Stack</a>
+        <a id="button-about" class="nav-button" onclick="setPage('about')">About</a>
     </div>
+
+    <hr>
 </div>
 
-<div class="page" id="projects">
+<div class="page" id="page-projects">
     <div class="color-legend">
         <div class="color-legend-item">
             <div class="color-legend-item-color color-engine"></div>
@@ -82,11 +84,11 @@
     </ol>
 </div>
 
-<div class="page d-none" id="stack">
+<div class="page d-none" id="page-stack">
     stack
 </div>
 
-<div class="page d-none" id="about">
+<div class="page d-none" id="page-about">
     about
 </div>
 

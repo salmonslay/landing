@@ -8,17 +8,25 @@ window.onload = function () {
  * @param page The page to set as active.
  */
 function setPage(page) {
-    let p = document.getElementById(page);
+    let p = document.getElementById("page-" + page);
+    let b = document.getElementById("button-" + page);
 
-    if (p === null)
+    if (p === null || b === null)
         return;
 
     p.classList.remove("d-none");
+    b.classList.add("active");
 
     let pages = document.getElementsByClassName("page");
     for (let i = 0; i < pages.length; i++) {
         if (pages[i] !== p)
             pages[i].classList.add("d-none");
+    }
+
+    let buttons = document.getElementsByClassName("nav-button");
+    for (let i = 0; i < buttons.length; i++) {
+        if (buttons[i] !== b)
+            buttons[i].classList.remove("active");
     }
 }
 
