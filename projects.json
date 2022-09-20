@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Galtaker",
-      "description": "Sokoban-inspired Unity game made for a game jam. Has localization through Crowdin, Steam achievements and an art gallery.",
+      "description": "Sokoban-inspired Unity game made for a game jam. Features localization with Crowdin, Steam achievements and an art gallery.",
       "thumbnail": "img/galtaker.png",
       "tags": {
         "engine": [
@@ -25,13 +25,13 @@
       "thumbnail": "img/svb!catch.png",
       "tags": {
         "engine": [
-          "Express"
+          "Node.js"
         ],
         "language": [
           "JavaScript"
         ],
         "framework": [
-          "Node.js",
+          "Express",
           "MySQL"
         ]
       },
@@ -52,13 +52,13 @@
       "thumbnail": "img/svb.png",
       "tags": {
         "engine": [
-          "Express"
+          "Node.js"
         ],
         "language": [
           "JavaScript"
         ],
         "framework": [
-          "Node.js",
+          "Express",
           "MySQL"
         ]
       },
@@ -132,7 +132,7 @@
     },
     {
       "title": "IKIMONO",
-      "description": "Pet simulator for Android made in Unity. Includes minigames, offline needs, a saving system and more.",
+      "description": "Pet simulator for Android made in Unity. Includes minigames, offline needs and a custom saving system.",
       "thumbnail": "img/ikimono.png",
       "tags": {
         "engine": [
@@ -153,6 +153,92 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/IKIMONO"
+        }
+      ]
+    },
+    {
+      "title": "SaltBot",
+      "description": "Discord bot made with discord.js with over 10,000 invites. Features 90+ commands, fictive battles, image manipulation and more.",
+      "thumbnail": "img/saltbot.png",
+      "tags": {
+        "engine": [
+          "Node.js"
+        ],
+        "language": [
+          "TypeScript"
+        ],
+        "framework": [
+          "discord.js",
+          "jimp"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://bots.ondiscord.xyz/bots/539453930313351168"
+        }
+      ]
+    },
+    {
+      "title": "SajberSim",
+      "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
+      "thumbnail": "img/sajbersim.png",
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          "Steamworks",
+          "Json.NET"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SajberSim"
+        }
+      ]
+    },
+    {
+      "title": "SpiderForest",
+      "description": "Unity platformer made at Stockholm University. Features 5 levels, a boss cutscene and custom made assets.",
+      "thumbnail": "img/spiderforest.png",
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SpiderForest"
+        }
+      ]
+    },
+    {
+      "title": "Charge the beat",
+      "description": "Unity taiko rhythm game made for a game jam. Full support for osu!taiko beatmaps and up to 4 players.",
+      "thumbnail": "img/ctb.png",
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/taiko-flip"
         }
       ]
     }
