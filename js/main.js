@@ -46,7 +46,7 @@ function loadProjects() {
                 let html = `
                     <li>
                         <figure>
-                            <img class="thumbnail" src="${project.thumbnail}" alt="Dishooks">
+                            <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
                             <figcaption>
                                 <p>${project.title}</p>
                                 <p>${project.description}</p>
