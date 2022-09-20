@@ -57,7 +57,7 @@ function loadProjects() {
                             <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
                             <figcaption>
                                 <p>${project.title}</p>
-                                <p>${project.description}</p>
+                                <p>${mdToHtml(project.description)}</p>
                                 <div class="pills">
                                     ${pillHtml}
                                 </div>
@@ -80,4 +80,10 @@ function loadProjects() {
     }
 
     request.send();
+}
+
+function mdToHtml(md) {
+    md = md.replace(/\[(.*?)\]\((.*?)\)/g, "<a href=\"$2\">$1</a>");
+
+    return md;
 }
