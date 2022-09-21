@@ -142,11 +142,15 @@ body h1 {
   font-weight: bold;
   margin: 0;
 }
-body #projects {
+body #page-projects {
   max-width: 90%;
   margin: 2em auto;
 }
-
+body #page-skills .skill-page {
+  max-width: 600px;
+  margin: 2em auto;
+  padding-bottom: 20px;
+}
 #banner {
   display: flex;
   flex-direction: column;
@@ -190,6 +194,10 @@ body #projects {
 .navbar a.active {
   font-weight: bold;
   color: #ce4a5c;
+}
+
+.actual-language {
+  color: #5f5f5f;
 }
 
 /*# sourceMappingURL=sajber.me.css.map */
