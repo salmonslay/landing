@@ -1,5 +1,9 @@
 window.onload = function () {
-    setPage("projects");
+    if (window.location.hash === "")
+        setPage("projects");
+    else
+        setPage(window.location.hash.substring(1));
+
     loadProjects();
 };
 
@@ -11,18 +15,27 @@ function setPage(page) {
     let p = document.getElementById("page-" + page);
     let b = document.getElementById("button-" + page);
 
+    // set url hash
+    window.location.hash = page;
+    if (page === "projects")
+        window.location.hash = "";
+
+    // verify that the page exists
     if (p === null || b === null)
         return;
 
+    // show page
     p.classList.remove("d-none");
     b.classList.add("active");
 
+    // hide other pages
     let pages = document.getElementsByClassName("page");
     for (let i = 0; i < pages.length; i++) {
         if (pages[i] !== p)
             pages[i].classList.add("d-none");
     }
 
+    // remove active from other buttons
     let buttons = document.getElementsByClassName("nav-button");
     for (let i = 0; i < buttons.length; i++) {
         if (buttons[i] !== b)
@@ -51,7 +64,8 @@ function loadProjects() {
                     buttonHtml += `<a class="button" href="${link.url}" target="_blank">${link.title}</a>`;
                 });
 
-                let html = `
+                document.getElementById("project-gallery").innerHTML +=
+                    `
                     <li>
                         <figure>
                             <div class="parent">
@@ -70,10 +84,7 @@ function loadProjects() {
                             </figcaption>
                         </figure>
                     </li>
-               `
-
-                document.getElementById("project-gallery").innerHTML += html;
-                // delete #loading
+                    `
             });
             document.getElementById("loading").remove();
 
