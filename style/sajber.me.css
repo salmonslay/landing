@@ -167,6 +167,7 @@ body #page-skills .skill-page {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #banner .social-icons .icon {
   padding: 10px;
