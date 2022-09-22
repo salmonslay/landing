@@ -51,7 +51,7 @@ ol.gallery, {
         height: 190px;
         object-fit: cover;
       }
-      
+
       figcaption {
         padding: 0.8rem;
 
@@ -120,6 +120,27 @@ ol.gallery, {
 
     .color-legend-item-text {
       font-size: 0.8rem;
+    }
+  }
+}
+
+.icon-legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .icon-legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5rem;
+
+    .icon-legend-item-text {
+      font-size: 0.8rem;
+
+      i {
+        color: $accent-color;
+      }
     }
   }
 }
