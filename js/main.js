@@ -68,12 +68,13 @@ function loadProjects() {
                     `
                     <li>
                         <figure>
-                            <div class="parent">
-                                ${project.starred ? `<i title="Large / important project" class="fas fa-star star"></i>` : ``}
-                                <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
-                            </div>
+                            <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
                             <figcaption>
-                                <p>${project.title}</p>
+                                <p>
+                                    ${project.starred ? `<i title="Large / important project" class="fas fa-star"></i>` : ``}
+                                    ${project.school ? `<i title="Project made for or in school" class="fa-solid fa-graduation-cap"></i>` : ``}
+                                    ${project.title} 
+                                </p> 
                                 <p>${mdToHtml(project.description)}</p>
                                 <div class="pills">
                                     ${pillHtml}

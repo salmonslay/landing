@@ -5,6 +5,7 @@
       "description": "Sokoban-inspired Unity game made for a game jam. Features localization with Crowdin, Steam achievements and an art gallery.",
       "thumbnail": "img/galtaker.png",
       "starred": true,
+      "school": false,
       "tags": {
         "engine": [
           "Unity"
@@ -25,6 +26,7 @@
       "description": "Web game based on osu!. Contains 200+ full beatmaps with music, 8 mods, online profiles and a custom difficulty system.",
       "thumbnail": "img/svb!catch.png",
       "starred": true,
+      "school": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -53,6 +55,7 @@
       "description": "3D battle royale game made in Unity. Features a custom map with 35+ unique rooms, online statistics and 100+ modelled assets.",
       "thumbnail": "img/sajberroyale.png",
       "starred": false,
+      "school": true,
       "tags": {
         "engine": [
           "Unity"
@@ -85,6 +88,7 @@
       "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
       "thumbnail": "img/dishooks.png",
       "starred": true,
+      "school": false,
       "tags": {
         "engine": [
           "Unity"
@@ -112,6 +116,7 @@
       "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
       "thumbnail": "img/sajbersim.png",
       "starred": true,
+      "school": true,
       "tags": {
         "engine": [
           "Unity"
@@ -136,6 +141,7 @@
       "description": "Discord bot made with discord.js with over 10,000 invites. Features 90+ commands, fictive battles, image manipulation and more.",
       "thumbnail": "img/saltbot.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -160,6 +166,7 @@
       "description": "News website based on SVT. Features online profiles with different privileged roles, game leaderboards and more.",
       "thumbnail": "img/svb.png",
       "starred": false,
+      "school": true,
       "tags": {
         "engine": [
           "Node.js"
@@ -188,6 +195,7 @@
       "description": "Pet simulator for Android made in Unity. Includes minigames, offline needs and a custom saving system.",
       "thumbnail": "img/ikimono.png",
       "starred": false,
+      "school": true,
       "tags": {
         "engine": [
           "Unity"
@@ -215,6 +223,7 @@
       "description": "Gacha module for SaltBot, inspired by Mudae. Features rolls, wishlisting, loot boxes and more. Discontinued and never published.",
       "thumbnail": "img/saltbot-gacha.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -239,6 +248,7 @@
       "description": "Unity taiko rhythm game made for a game jam. Full support for osu!taiko beatmaps and up to 4 players.",
       "thumbnail": "img/ctb.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
           "Unity"
@@ -261,6 +271,7 @@
       "description": "Website to view personal anime watching habits, allowing users to compare their scores with others. All data is from Anilist.",
       "thumbnail": "img/anistats.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -286,6 +297,7 @@
       "description": "A simple web server to automatically fetch, save and display Unity Cloud Builds.",
       "thumbnail": "img/galhooks.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -311,6 +323,7 @@
       "description": "The website you're currently on. It's made with HTML, JS and SCSS, and the projects are saved with JSON.",
       "thumbnail": "img/website.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
         ],
@@ -338,6 +351,7 @@
       "description": "Tiny application that automatically plays a random sound at random intervals. Made for [babehog](https://www.twitch.tv/babehog).",
       "thumbnail": "img/is.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
         ],
@@ -361,6 +375,7 @@
       "description": "A simple web scraper for MyAnimeList, scraping characters and their respective media. Has a web interface, automated cloud backup and tools for renaming/removing duplicates.",
       "thumbnail": "img/mal-scraper.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -386,6 +401,7 @@
       "description": "A simple script that automatically answers questions in the MSP2 minigame Star Quiz. Monitors the game web socket and comparing data to a known answer list.",
       "thumbnail": "img/auto-starquiz.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
         ],
@@ -411,6 +427,7 @@
       "description": "Python script that counts word occurrences from a Discord user and plots their texting frequency.",
       "thumbnail": "img/discord-stats.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
         ],
@@ -434,6 +451,7 @@
       "description": "A silly Node.js server that hosts an image of Mario. If previewed on Discord it will look normal, but when opened in a browser it will be creepier and have the users IP address.",
       "thumbnail": "img/mario-knows.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
           "Node.js"
@@ -462,6 +480,7 @@
       "description": "Website to show an users most used emotes on Discord.",
       "thumbnail": "img/des.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
         ],
@@ -489,6 +508,7 @@
       "description": "An online UNO card game made with Unity. Supports up to 9 players over internet and has Discord rich presence.",
       "thumbnail": "img/ett.png",
       "starred": false,
+      "school": false,
       "tags": {
         "engine": [
           "Unity"
@@ -512,6 +532,7 @@
       "description": "Unity platformer made at Stockholm University. Features 5 levels, a boss cutscene and custom made assets.",
       "thumbnail": "img/spiderforest.png",
       "starred": false,
+      "school": true,
       "tags": {
         "engine": [
           "Unity"
