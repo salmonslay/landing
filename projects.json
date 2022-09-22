@@ -476,34 +476,6 @@
       ]
     },
     {
-      "title": "DiscordEmoteStats",
-      "description": "Website to show an users most used emotes on Discord.",
-      "thumbnail": "img/des.png",
-      "starred": false,
-      "school": false,
-      "tags": {
-        "engine": [
-        ],
-        "language": [
-          "JavaScript"
-        ],
-        "framework": [
-          "Bootstrap",
-          "Google Charts"
-        ]
-      },
-      "links": [
-        {
-          "title": "View",
-          "url": "https://sajber.me/emoji"
-        },
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/DiscordEmoteStats"
-        }
-      ]
-    },
-    {
       "title": "ETT",
       "description": "An online UNO card game made with Unity. Supports up to 9 players over internet and has Discord rich presence.",
       "thumbnail": "img/ett.png",
@@ -545,6 +517,34 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/SpiderForest"
+        }
+      ]
+    },
+    {
+      "title": "DiscordEmoteStats",
+      "description": "Website to show an users most used emotes on Discord.",
+      "thumbnail": "img/des.png",
+      "starred": false,
+      "school": false,
+      "tags": {
+        "engine": [
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+          "Bootstrap",
+          "Google Charts"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://sajber.me/emoji"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/DiscordEmoteStats"
         }
       ]
     }
