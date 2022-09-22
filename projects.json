@@ -423,6 +423,109 @@
           "url": "https://github.com/LiterallyFabian/discord-stats"
         }
       ]
+    },
+    {
+      "title": "mario-knows",
+      "description": "A silly Node.js server that hosts an image of Mario. If previewed on Discord it will look normal, but when opened in a browser it will be creepier and have the users IP address.",
+      "thumbnail": "img/mario-knows.png",
+      "starred": false,
+      "tags": {
+        "engine": [
+          "Node.js"
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+          "Express",
+          "jimp"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://sajber.me/mario.png"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/mario-knows"
+        }
+      ]
+    },
+    {
+      "title": "Anistats",
+      "description": "Website to view personal anime watching habits, allowing users to compare their scores with others. All data is from Anilist.",
+      "thumbnail": "img/anistats.png",
+      "starred": false,
+      "tags": {
+        "engine": [
+          "Node.js"
+        ],
+        "language": [
+          "EJS",
+          "JavaScript"
+        ],
+        "framework": [
+          "Express",
+          "GraphQL"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/anistats"
+        }
+      ]
+    },
+    {
+      "title": "DiscordEmoteStats",
+      "description": "Website to show an users most used emotes on Discord.",
+      "thumbnail": "img/des.png",
+      "starred": false,
+      "tags": {
+        "engine": [
+        ],
+        "language": [
+          "JavaScript"
+        ],
+        "framework": [
+          "Bootstrap",
+          "Google Charts"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://sajber.me/emoji"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/DiscordEmoteStats"
+        }
+      ]
+    },
+    {
+      "title": "ETT",
+      "description": "An online UNO card game made with Unity. Supports up to 9 players over internet and has Discord rich presence.",
+      "thumbnail": "img/ett.png",
+      "starred": false,
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          "Photon"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/ETT"
+        }
+      ]
     }
   ]
 }
