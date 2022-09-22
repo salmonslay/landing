@@ -108,10 +108,10 @@
       ]
     },
     {
-      "title": "IKIMONO",
-      "description": "Pet simulator for Android made in Unity. Includes minigames, offline needs and a custom saving system.",
-      "thumbnail": "img/ikimono.png",
-      "starred": false,
+      "title": "SajberSim",
+      "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
+      "thumbnail": "img/sajbersim.png",
+      "starred": true,
       "tags": {
         "engine": [
           "Unity"
@@ -120,17 +120,14 @@
           "C#"
         ],
         "framework": [
+          "Steamworks",
           "Json.NET"
         ]
       },
       "links": [
         {
-          "title": "View",
-          "url": "https://play.google.com/store/apps/details?id=com.G3.IKIMONO"
-        },
-        {
           "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/IKIMONO"
+          "url": "https://github.com/LiterallyFabian/SajberSim"
         }
       ]
     },
@@ -187,10 +184,10 @@
       ]
     },
     {
-      "title": "SajberSim",
-      "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
-      "thumbnail": "img/sajbersim.png",
-      "starred": true,
+      "title": "IKIMONO",
+      "description": "Pet simulator for Android made in Unity. Includes minigames, offline needs and a custom saving system.",
+      "thumbnail": "img/ikimono.png",
+      "starred": false,
       "tags": {
         "engine": [
           "Unity"
@@ -199,34 +196,41 @@
           "C#"
         ],
         "framework": [
-          "Steamworks",
           "Json.NET"
         ]
       },
       "links": [
         {
+          "title": "View",
+          "url": "https://play.google.com/store/apps/details?id=com.G3.IKIMONO"
+        },
+        {
           "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/SajberSim"
+          "url": "https://github.com/LiterallyFabian/IKIMONO"
         }
       ]
     },
     {
-      "title": "SpiderForest",
-      "description": "Unity platformer made at Stockholm University. Features 5 levels, a boss cutscene and custom made assets.",
-      "thumbnail": "img/spiderforest.png",
+      "title": "SaltBot-Gacha",
+      "description": "Gacha module for SaltBot, inspired by Mudae. Features rolls, wishlisting, loot boxes and more. Discontinued and never published.",
+      "thumbnail": "img/saltbot-gacha.png",
       "starred": false,
       "tags": {
         "engine": [
-          "Unity"
+          "Node.js"
         ],
         "language": [
-          "C#"
+          "JavaScript"
+        ],
+        "framework": [
+          "discord.js",
+          "MySQL"
         ]
       },
       "links": [
         {
           "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/SpiderForest"
+          "url": "https://github.com/LiterallyFabian/SaltBot-Gacha"
         }
       ]
     },
@@ -249,6 +253,31 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/taiko-flip"
+        }
+      ]
+    },
+    {
+      "title": "Anistats",
+      "description": "Website to view personal anime watching habits, allowing users to compare their scores with others. All data is from Anilist.",
+      "thumbnail": "img/anistats.png",
+      "starred": false,
+      "tags": {
+        "engine": [
+          "Node.js"
+        ],
+        "language": [
+          "EJS",
+          "JavaScript"
+        ],
+        "framework": [
+          "Express",
+          "GraphQL"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/anistats"
         }
       ]
     },
@@ -279,7 +308,7 @@
     },
     {
       "title": "This website",
-      "description": "The website you're currently on. Made with HTML, JS and SCSS, projects are saved with JSON.",
+      "description": "The website you're currently on. It's made with HTML, JS and SCSS, and the projects are saved with JSON.",
       "thumbnail": "img/website.png",
       "starred": false,
       "tags": {
@@ -349,30 +378,6 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/MAL-Scraper"
-        }
-      ]
-    },
-    {
-      "title": "SaltBot-Gacha",
-      "description": "Gacha module for SaltBot, inspired by Mudae. Features rolls, wishlisting, loot boxes and more. Discontinued and never published.",
-      "thumbnail": "img/saltbot-gacha.png",
-      "starred": false,
-      "tags": {
-        "engine": [
-          "Node.js"
-        ],
-        "language": [
-          "JavaScript"
-        ],
-        "framework": [
-          "discord.js",
-          "MySQL"
-        ]
-      },
-      "links": [
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/SaltBot-Gacha"
         }
       ]
     },
@@ -453,31 +458,6 @@
       ]
     },
     {
-      "title": "Anistats",
-      "description": "Website to view personal anime watching habits, allowing users to compare their scores with others. All data is from Anilist.",
-      "thumbnail": "img/anistats.png",
-      "starred": false,
-      "tags": {
-        "engine": [
-          "Node.js"
-        ],
-        "language": [
-          "EJS",
-          "JavaScript"
-        ],
-        "framework": [
-          "Express",
-          "GraphQL"
-        ]
-      },
-      "links": [
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/anistats"
-        }
-      ]
-    },
-    {
       "title": "DiscordEmoteStats",
       "description": "Website to show an users most used emotes on Discord.",
       "thumbnail": "img/des.png",
@@ -524,6 +504,26 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/ETT"
+        }
+      ]
+    },
+    {
+      "title": "SpiderForest",
+      "description": "Unity platformer made at Stockholm University. Features 5 levels, a boss cutscene and custom made assets.",
+      "thumbnail": "img/spiderforest.png",
+      "starred": false,
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SpiderForest"
         }
       ]
     }
