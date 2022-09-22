@@ -43,6 +43,20 @@ function setPage(page) {
     }
 }
 
+const buttonIcons = {
+    "github": "fab fa-github",
+    "view": "fas fa-globe",
+    "unity": "fab fa-unity",
+    "documentation": "fas fa-book",
+    "video": "fas fa-video",
+    "leaderboard": "fa-solid fa-medal",
+    "trailer": "fa-solid fa-film",
+    "album": "fa-solid fa-images",
+    "steam": "fa-brands fa-steam",
+    "download": "fa-solid fa-download",
+    "google play": "fa-brands fa-google-play",
+}
+
 function loadProjects() {
     // get json file projects.json
     let request = new XMLHttpRequest();
@@ -61,7 +75,15 @@ function loadProjects() {
 
                 let buttonHtml = "";
                 project.links.forEach(link => {
-                    buttonHtml += `<a class="button" href="${link.url}" target="_blank">${link.title}</a>`;
+                    // find icon whose name exists in the link title
+                    let icon = "fa-solid fa-link";
+                    for (let key in buttonIcons) {
+                        if (link.title.toLowerCase().includes(key)) {
+                            icon = buttonIcons[key];
+                            break;
+                        }
+                    }
+                    buttonHtml += `<a class="button" href="${link.url}" target="_blank"><i class="${icon}"></i> ${link.title}</a>`;
                 });
 
                 document.getElementById("project-gallery").innerHTML +=
