@@ -42,15 +42,15 @@ The projects on the page are stored in the `projects.json` file. The structure i
 }
 ```
 
-| Key         | Value  | Description                                                                                  | Required |
-|-------------|--------|----------------------------------------------------------------------------------------------|----------|
-| title       | string | The title for the project                                                                    | x        |
-| description | string | The description for the project. Supports markdown                                           | x        |
-| thumbnail   | string | The path to the thumbnail image. It should be roughly **8:5 aspect ratio** or **600x380px**. | x        |
-| starred     | bool   | Whether to show a star icon on the card                                                      |          |
-| school      | bool   | Whether to show a school icon on the card                                                    |          |
-| tags        | object | An object containing the tags for the project. See [below](#tags) for more information.      | x        |
-| links       | array  | A list of links for the project. See [below](#links) for more information.                   | x        |
+| Key         | Value    | Description                                                                                       | Required |
+|-------------|----------|---------------------------------------------------------------------------------------------------|----------|
+| title       | string   | The title for the project                                                                         | x        |
+| description | string   | The description for the project. Supports markdown                                                | x        |
+| thumbnail   | string   | The path to the thumbnail image. It should be in roughly a **8:5 aspect ratio** or **600x380px**. | x        |
+| starred     | bool     | Whether to show a star icon on the card                                                           |          |
+| school      | bool     | Whether to show a school icon on the card                                                         |          |
+| tags        | object   | An object containing the tags for the project. See [below](#tags) for more information.           | x        |
+| links       | object[] | A list of links for the project. See [below](#links) for more information.                        | x        |
 
 #### Tags
 
@@ -64,14 +64,13 @@ The tags are used to add badges to all projects by category. The following categ
 
 #### Links
 
-The links are shown as buttons on the project card. The following keys are available:
+The links are shown as buttons on the project card. A link object only has two keys:
 
 | Key   | Value  | Description                              | Required |
 |-------|--------|------------------------------------------|----------|
 | title | string | The text to display on the button        | x        |
 | url   | string | The URL to open when pressing the button | x        |
 
-Depending on the title, a specific icon will be displayed:
-
+All links have their own icon, which is determined by the title. If a title contains one of the following words, the corresponding icon will be used. If no icon is found, the default chain icon will be used. 
 
 `github, view, unity, documentation, video, leaderboard, trailer, album, steam, download, google play, blog`
