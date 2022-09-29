@@ -55,6 +55,7 @@ const buttonIcons = {
     "steam": "fa-brands fa-steam",
     "download": "fa-solid fa-download",
     "google play": "fa-brands fa-google-play",
+    "blog": "fa-solid fa-feather-pointed",
 }
 
 function loadProjects() {
