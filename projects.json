@@ -252,6 +252,33 @@
       ]
     },
     {
+      "title": "3DR",
+      "description": "A 3D environment made in Unreal Engine 5 for the [3D rendering](https://www.su.se/sok-kurser-och-program/ib150n-1.496964) course at Stockholm University.",
+      "thumbnail": "img/3dr.png",
+      "starred": false,
+      "school": true,
+      "tags": {
+        "engine": [
+          "Unreal Engine 5"
+        ],
+        "language": [
+        ],
+        "framework": [
+          "Quixel"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SU-3DR"
+        },
+        {
+          "title": "Album",
+          "url": "https://imgur.com/a/cerVOyi"
+        }
+      ]
+    },
+    {
       "title": "Charge the beat",
       "description": "Unity taiko rhythm game made for a game jam. Full support for osu!taiko beatmaps and up to 4 players.",
       "thumbnail": "img/ctb.png",
@@ -529,7 +556,8 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/SpiderForest"
-        },{
+        },
+        {
           "title": "Download",
           "url": "https://github.com/LiterallyFabian/SpiderForest/releases"
         }
