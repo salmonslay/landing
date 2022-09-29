@@ -71,3 +71,7 @@ The links are shown as buttons on the project card. The following keys are avail
 | title | string | The text to display on the button        | x        |
 | url   | string | The URL to open when pressing the button | x        |
 
+Depending on the title, a specific icon will be displayed:
+
+
+`github, view, unity, documentation, video, leaderboard, trailer, album, steam, download, google play, blog`
