@@ -50,7 +50,7 @@ The projects on the page are stored in the `projects.json` file. The structure i
 | starred     | bool   | Whether to show a star icon on the card                                                      |          |
 | school      | bool   | Whether to show a school icon on the card                                                    |          |
 | tags        | object | A list of tags for the project. See below for more information.                              | x        |
-| links       | link[] | A list of links for the project. See below for more information.                             | x        |
+| links       | array  | A list of links for the project. See below for more information.                             | x        |
 
 #### Tags
 
