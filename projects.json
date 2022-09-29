@@ -255,13 +255,10 @@
       "title": "3DR",
       "description": "A 3D environment made in Unreal Engine 5 for the [3D rendering](https://www.su.se/sok-kurser-och-program/ib150n-1.496964) course at Stockholm University.",
       "thumbnail": "img/3dr.png",
-      "starred": false,
       "school": true,
       "tags": {
         "engine": [
           "Unreal Engine 5"
-        ],
-        "language": [
         ],
         "framework": [
           "Quixel"
