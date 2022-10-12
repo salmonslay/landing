@@ -252,6 +252,38 @@
       ]
     },
     {
+      "title": "Jam Maestro",
+      "description": "Cooking/mixing-type game made in 2 days using Unity. It features online leaderboards, 17 ingredients and 6 character reactions.",
+      "thumbnail": "img/jammaestro.png",
+      "starred": false,
+      "school": false,
+      "tags": {
+        "engine": [
+          "Unity",
+          "Node.js"
+        ],
+        "language": [
+          "C#",
+          "JavaScript"
+        ],
+        "framework": [
+          "Json.NET",
+          "Express",
+          "MySQL"
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://literallyfabian.itch.io/jam-meistro"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/jam-meistro"
+        }
+      ]
+    },
+    {
       "title": "3DR",
       "description": "A 3D environment made in Unreal Engine 5 for the [3D rendering](https://www.su.se/sok-kurser-och-program/ib150n-1.496964) course at Stockholm University.",
       "thumbnail": "img/3dr.png",
