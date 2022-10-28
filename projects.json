@@ -40,7 +40,8 @@
         ],
         "framework": [
           "Express",
-          "MySQL"
+          "MySQL",
+          "OAuth 2.0"
         ]
       },
       "links": [
@@ -275,11 +276,11 @@
       "links": [
         {
           "title": "View",
-          "url": "https://literallyfabian.itch.io/jam-meistro"
+          "url": "https://github.com/LiterallyFabian/jam-maestro"
         },
         {
           "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/jam-meistro"
+          "url": "https://github.com/LiterallyFabian/jam-maestro"
         }
       ]
     },
