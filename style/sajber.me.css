@@ -157,10 +157,10 @@ body #page-projects {
   max-width: 90%;
   margin: 0 auto;
 }
-body #page-skills .skill-page {
+body .skill-page {
   max-width: 600px;
-  margin: 2em auto;
-  padding-bottom: 20px;
+  margin: 0 auto 2em auto;
+  padding: 0 20px 20px 20px;
 }
 #banner {
   display: flex;

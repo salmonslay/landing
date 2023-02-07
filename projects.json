@@ -89,6 +89,33 @@
       ]
     },
     {
+      "title": "fruitwork",
+      "description": "Game engine written in C++ using the Simple DirectMedia Layer library. Features a scene system, a physics engine and multiple test scenes.",
+      "thumbnail": "img/fruitwork.png",
+      "starred": true,
+      "school": true,
+      "tags": {
+        "engine": [],
+        "language": [
+          "C++",
+          "Makefile"
+        ],
+        "framework": [
+          "SDL2"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/fruitwork"
+        },
+        {
+          "title": "Ex. implementation",
+          "url": "https://youtu.be/iygYWxroH_8"
+        }
+      ]
+    },
+    {
       "title": "Dishooks",
       "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
       "thumbnail": "img/dishooks.png",
@@ -332,32 +359,6 @@
       ]
     },
     {
-      "title": "Anistats",
-      "description": "Website to view personal anime watching habits, allowing users to compare their scores with others. All data is from Anilist.",
-      "thumbnail": "img/anistats.png",
-      "starred": false,
-      "school": false,
-      "tags": {
-        "engine": [
-          "Node.js"
-        ],
-        "language": [
-          "EJS",
-          "JavaScript"
-        ],
-        "framework": [
-          "Express",
-          "GraphQL"
-        ]
-      },
-      "links": [
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/anistats"
-        }
-      ]
-    },
-    {
       "title": "Galhooks",
       "description": "A simple web server to automatically fetch, save and display Unity Cloud Builds.",
       "thumbnail": "img/galhooks.png",
@@ -440,32 +441,6 @@
       ]
     },
     {
-      "title": "MAL-Scraper",
-      "description": "A simple web scraper for MyAnimeList, scraping characters and their respective media. Has a web interface, automated cloud backup and tools for renaming/removing duplicates.",
-      "thumbnail": "img/mal-scraper.png",
-      "starred": false,
-      "school": false,
-      "tags": {
-        "engine": [
-          "Node.js"
-        ],
-        "language": [
-          "JavaScript"
-        ],
-        "framework": [
-          "Express",
-          "MySQL",
-          "Cloudinary"
-        ]
-      },
-      "links": [
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/MAL-Scraper"
-        }
-      ]
-    },
-    {
       "title": "auto-starquiz",
       "description": "A simple script that automatically answers questions in the MSP2 minigame Star Quiz. Monitors the game web socket and comparing data to a known answer list.",
       "thumbnail": "img/auto-starquiz.png",
@@ -488,30 +463,6 @@
         {
           "title": "Video",
           "url": "https://www.youtube.com/watch?v=2A0kKcAAZNs"
-        }
-      ]
-    },
-    {
-      "title": "discord-stats",
-      "description": "Python script that counts word occurrences from a Discord user and plots their texting frequency.",
-      "thumbnail": "img/discord-stats.png",
-      "starred": false,
-      "school": false,
-      "tags": {
-        "engine": [
-        ],
-        "language": [
-          "Python"
-        ],
-        "framework": [
-          "pandas",
-          "matplotlib"
-        ]
-      },
-      "links": [
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/discord-stats"
         }
       ]
     },
@@ -565,59 +516,6 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/ETT"
-        }
-      ]
-    },
-    {
-      "title": "SpiderForest",
-      "description": "Unity platformer made at Stockholm University. Features 5 levels, a boss cutscene and custom made assets.",
-      "thumbnail": "img/spiderforest.png",
-      "starred": false,
-      "school": true,
-      "tags": {
-        "engine": [
-          "Unity"
-        ],
-        "language": [
-          "C#"
-        ]
-      },
-      "links": [
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/SpiderForest"
-        },
-        {
-          "title": "Download",
-          "url": "https://github.com/LiterallyFabian/SpiderForest/releases"
-        }
-      ]
-    },
-    {
-      "title": "DiscordEmoteStats",
-      "description": "Website to show an users most used emotes on Discord.",
-      "thumbnail": "img/des.png",
-      "starred": false,
-      "school": false,
-      "tags": {
-        "engine": [
-        ],
-        "language": [
-          "JavaScript"
-        ],
-        "framework": [
-          "Bootstrap",
-          "Google Charts"
-        ]
-      },
-      "links": [
-        {
-          "title": "View",
-          "url": "https://sajber.me/emoji"
-        },
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/DiscordEmoteStats"
         }
       ]
     }
