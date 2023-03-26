@@ -255,6 +255,33 @@
       ]
     },
     {
+      "title": "Digital Deception",
+      "description": "An educational '90s internet simulator where you work as an email moderator to detect junk emails.",
+      "thumbnail": "img/dd.png",
+      "starred": false,
+      "school": true,
+      "tags": {
+        "engine": [
+        ],
+        "language": [
+          "JavaScript",
+          "SCSS"
+        ],
+        "framework": [
+        ]
+      },
+      "links": [
+        {
+          "title": "View",
+          "url": "https://people.dsv.su.se/~fali3459/digitaldeception/"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/IKIMONO"
+        }
+      ]
+    },
+    {
       "title": "SaltBot-Gacha",
       "description": "Gacha module for SaltBot, inspired by Mudae. Features rolls, wishlisting, loot boxes and more. Discontinued and never published.",
       "thumbnail": "img/saltbot-gacha.png",
