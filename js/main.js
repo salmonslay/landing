@@ -66,6 +66,8 @@ function loadProjects() {
         if (request.status >= 200 && request.status < 400) {
             let data = JSON.parse(request.responseText);
             data.projects.forEach(project => {
+                if (project.hidden)
+                    return;
 
                 let pillHtml = "";
                 for (let key in project.tags) {

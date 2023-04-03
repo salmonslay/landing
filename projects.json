@@ -287,6 +287,7 @@
       "thumbnail": "img/saltbot-gacha.png",
       "starred": false,
       "school": false,
+      "hidden": true,
       "tags": {
         "engine": [
           "Node.js"
@@ -343,6 +344,7 @@
       "description": "A 3D environment made in Unreal Engine 5 for the [3D rendering](https://www.su.se/sok-kurser-och-program/ib150n-1.496964) course at Stockholm University.",
       "thumbnail": "img/3dr.png",
       "school": true,
+      "hidden": true,
       "tags": {
         "engine": [
           "Unreal Engine 5"
@@ -368,6 +370,7 @@
       "thumbnail": "img/ctb.png",
       "starred": false,
       "school": false,
+      "hidden": true,
       "tags": {
         "engine": [
           "Unity"
@@ -445,6 +448,7 @@
       "thumbnail": "img/is.png",
       "starred": false,
       "school": false,
+      "hidden": true,
       "tags": {
         "engine": [
         ],
@@ -528,6 +532,7 @@
       "thumbnail": "img/ett.png",
       "starred": false,
       "school": false,
+      "hidden": true,
       "tags": {
         "engine": [
           "Unity"
