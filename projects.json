@@ -3,6 +3,7 @@
     {
       "title": "Galtaker",
       "description": "Sokoban-inspired Unity game made for a game jam. Features localization with Crowdin, Steam achievements and an art gallery.",
+      "longDescription": "Galtaker is a Sokoban-inspired puzzle game I made in Unity for a game jam together with [Nora G](https://www.artstation.com/noroalia). We have since then expanded the game with plans to release it on Steam.\n\nThe game features localization with Crowdin, Steam achievements through Steamworks and an art gallery, and has 15 levels.",
       "thumbnail": "img/galtaker.png",
       "images": [
         "img/galtaker2.png"
@@ -31,6 +32,7 @@
     {
       "title": "svb!catch",
       "description": "Web game based on osu!. Contains 200+ full beatmaps with music, 8 mods, online profiles and a custom difficulty system.",
+      "longDescription": "svb!catch is a browser rhythm game based on osu!catch. Any beatmap available in osu! can be played in svb!catch, and the game features 5 unique types of modifiers to spice up the gameplay.\n\nThe game features online profiles via Discord OAuth 2.0, a custom difficulty system and online leaderboards. This was created as a side project during my Web Development 2 & Web server programming courses.",
       "thumbnail": "img/svb!catch.png",
       "starred": true,
       "school": false,

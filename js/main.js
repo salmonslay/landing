@@ -113,7 +113,8 @@ function loadProjects() {
                                     ${project.school ? `<i title="Project made for or in school" class="fa-solid fa-graduation-cap"></i>` : ``}
                                     ${project.title} 
                                 </p> 
-                                <p>${mdToHtml(project.description)}</p>
+                                <p class="short-description">${mdLinksToHtml(project.description)}</p>
+                                <p class="long-description">${mdLinksToHtml(project.longDescription ? project.longDescription : project.description)}</p>
                                 <div class="pills">
                                     ${pillHtml}
                                 </div>
@@ -137,7 +138,7 @@ function loadProjects() {
     request.send();
 }
 
-function mdToHtml(md) {
+function mdLinksToHtml(md) {
     md = md.replace(/\[(.*?)\]\((.*?)\)/g, "<a href=\"$2\">$1</a>");
 
     return md;

@@ -63,6 +63,10 @@
               font-weight: bold;
               color: $accent-color;
             }
+
+            &.long-description {
+              display: none;
+            }
           }
 
           .pills {

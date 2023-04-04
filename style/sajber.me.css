@@ -57,6 +57,9 @@
     font-weight: bold;
     color: #ce4a5c;
   }
+  ol.gallery li figure figcaption p.long-description {
+    display: none;
+  }
   ol.gallery li figure figcaption .pills .pill {
     display: inline-block;
     padding: 0.2em 0.5em;
@@ -117,10 +120,11 @@
     margin: 0;
     align-items: center;
     display: flex;
+    height: 285px;
   }
   ol.gallery li figure .thumbnail-container {
-    height: 285px;
     width: 450px;
+    height: 100%;
     position: relative;
   }
   ol.gallery li figure .thumbnail-container .arrow {
@@ -156,9 +160,11 @@
     display: block;
     object-fit: cover;
     height: 100%;
+    max-width: 450px;
   }
   ol.gallery li figure figcaption {
     padding: 0.8rem;
+    height: 100%;
   }
   ol.gallery li figure figcaption p {
     margin: 0.5em 0;
@@ -166,6 +172,12 @@
   ol.gallery li figure figcaption p:first-child {
     font-weight: bold;
     color: #ce4a5c;
+  }
+  ol.gallery li figure figcaption p.short-description {
+    display: none;
+  }
+  ol.gallery li figure figcaption p.long-description {
+    white-space: pre-wrap;
   }
   ol.gallery li figure figcaption .pills .pill {
     display: inline-block;

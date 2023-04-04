@@ -38,10 +38,11 @@
         margin: 0;
         align-items: center;
         display: flex;
+        height: 285px;
 
         .thumbnail-container {
-          height: 285px;
           width: 450px;
+          height: 100%;
           position: relative;
 
           .arrow {
@@ -84,11 +85,13 @@
             display: block;
             object-fit: cover;
             height: 100%;
+            max-width: 450px;
           }
         }
 
         figcaption {
           padding: 0.8rem;
+          height: 100%;
 
           p {
             margin: 0.5em 0;
@@ -96,6 +99,14 @@
             &:first-child {
               font-weight: bold;
               color: $accent-color;
+            }
+
+            &.short-description {
+              display: none;
+            }
+
+            &.long-description {
+              white-space: pre-wrap;
             }
           }
 
