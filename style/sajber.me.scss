@@ -4,7 +4,12 @@ $text-color: #1f1f1f;
 $text-secondary-color: #5f5f5f;
 $accent-color: #ce4a5c;
 
+$color-engine: #41CFD9;
+$color-language: #A541D9;
+$color-framework: #546BF0;
+
 @import "gallery";
+@import "gallery_new";
 
 html {
   height: 100%;
@@ -101,4 +106,63 @@ body {
 
 .actual-language {
   color: $text-secondary-color;
+}
+
+.color-legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+
+  .color-legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5rem;
+
+    .color-legend-item-color {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .color-legend-item-text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.icon-legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .icon-legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5rem;
+
+    .icon-legend-item-text {
+      font-size: 0.8rem;
+
+      i {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+.color-engine {
+  background-color: $color-engine;
+}
+
+.color-language {
+  background-color: $color-language;
+}
+
+.color-framework {
+  background-color: $color-framework;
 }

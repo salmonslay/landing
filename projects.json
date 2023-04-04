@@ -4,6 +4,9 @@
       "title": "Galtaker",
       "description": "Sokoban-inspired Unity game made for a game jam. Features localization with Crowdin, Steam achievements and an art gallery.",
       "thumbnail": "img/galtaker.png",
+      "images": [
+        "img/galtaker2.png"
+      ],
       "starred": true,
       "school": false,
       "tags": {

@@ -58,6 +58,8 @@ const buttonIcons = {
     "blog": "fa-solid fa-feather-pointed",
 }
 
+const projects = {};
+
 function loadProjects() {
     // get json file projects.json
     let request = new XMLHttpRequest();
@@ -89,11 +91,22 @@ function loadProjects() {
                     buttonHtml += `<a class="button" href="${link.url}" target="_blank"><i class="${icon}"></i> ${link.title}</a>`;
                 });
 
+                // a project id is the project title with all non-alphanumeric characters removed and spaces replaced with dashes
+                let projectId = project.title.replace(/ /g, "-")
+                    .replace(/[^a-zA-Z0-9\-]/g, "")
+                    .toLowerCase();
+
                 document.getElementById("project-gallery").innerHTML +=
                     `
-                    <li>
+                    <li id="project-${projectId}">
                         <figure>
-                            <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
+                            <div class="thumbnail-container">
+                                <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
+                                ${project.images && project.images.length > 0 ? `
+                                <i class="fa-solid fa-chevron-left fa-xl arrow left-arrow" onclick="changeImage(true, '${projectId}');"></i>
+                                <i class="fa-solid fa-chevron-right fa-xl arrow right-arrow" onclick="changeImage(false, '${projectId}');"></i>
+                                ` : ``}
+                            </div>
                             <figcaption>
                                 <p>
                                     ${project.starred ? `<i title="Large / important project" class="fas fa-star"></i>` : ``}
@@ -111,6 +124,8 @@ function loadProjects() {
                         </figure>
                     </li>
                     `
+
+                projects[projectId] = project;
             });
             document.getElementById("loading").remove();
 
@@ -126,4 +141,30 @@ function mdToHtml(md) {
     md = md.replace(/\[(.*?)\]\((.*?)\)/g, "<a href=\"$2\">$1</a>");
 
     return md;
+}
+
+/**
+ * Changes the currently displayed image of a project
+ * @param left Whether to go left or right
+ * @param projectId The id of the project
+ */
+function changeImage(left, projectId) {
+    let project = projects[projectId];
+
+    console.log(`going ${left ? "left" : "right"} on project ${projectId}`);
+
+
+    if (project.index === undefined) // not switched before, add index & thumbnail to images array
+    {
+        project.index = 0;
+        project.images.unshift(project.thumbnail);
+    }
+
+    project.index += left ? -1 : 1;
+    if (project.index < 0)
+        project.index = project.images.length - 1;
+    else if (project.index >= project.images.length)
+        project.index = 0;
+
+    $(`#project-${projectId} .thumbnail`).attr("src", project.images[project.index]);
 }
