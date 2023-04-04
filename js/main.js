@@ -109,7 +109,7 @@ function loadProjects() {
                             </div>
                             <figcaption>
                                 <h3>
-                                    ${project.starred ? `<i title="Large / important project" class="fas fa-star"></i>` : ``}
+                                    ${project.starred ? `<!--<i title="Large / important project" class="fas fa-star"></i>-->` : ``} 
                                     ${project.school ? `<i title="Project made for or in school" class="fa-solid fa-graduation-cap"></i>` : ``}
                                     ${project.title} 
                                 </h3> 
