@@ -108,18 +108,20 @@ function loadProjects() {
                                 ` : ``}
                             </div>
                             <figcaption>
-                                <p>
+                                <h3>
                                     ${project.starred ? `<i title="Large / important project" class="fas fa-star"></i>` : ``}
                                     ${project.school ? `<i title="Project made for or in school" class="fa-solid fa-graduation-cap"></i>` : ``}
                                     ${project.title} 
-                                </p> 
+                                </h3> 
                                 <p class="short-description">${mdLinksToHtml(project.description)}</p>
                                 <p class="long-description">${mdLinksToHtml(project.longDescription ? project.longDescription : project.description)}</p>
-                                <div class="pills">
-                                    ${pillHtml}
-                                </div>
-                                <div class="buttons">
-                                    ${buttonHtml}
+                                <div class="toolbar">
+                                    <div class="pills">
+                                        ${pillHtml}
+                                    </div>
+                                    <div class="buttons">
+                                        ${buttonHtml}
+                                    </div>
                                 </div>
                             </figcaption>
                         </figure>

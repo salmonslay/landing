@@ -10,7 +10,7 @@
       box-shadow: 4px 5px 5px rgb(0 0 0 / 10%);
       -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      max-width: 1100px;
+      max-width: 1200px;
 
       margin: 1.5em auto;
 
@@ -90,17 +90,22 @@
         }
 
         figcaption {
-          padding: 0.8rem;
           height: 100%;
+          padding: 0.6rem 1rem;
+          position: relative;
+          box-sizing: border-box;
+
+          p, h3 {
+            margin: 0.5em 0;
+          }
+
+          h3 {
+            margin-top: 0;
+            font-weight: bold;
+            color: $accent-color;
+          }
 
           p {
-            margin: 0.5em 0;
-
-            &:first-child {
-              font-weight: bold;
-              color: $accent-color;
-            }
-
             &.short-description {
               display: none;
             }
@@ -110,32 +115,38 @@
             }
           }
 
-          .pills {
-            .pill {
-              display: inline-block;
-              padding: 0.2em 0.5em;
-              margin: 0.2em;
-              border-radius: 0.2em;
-              color: $foreground-color;
-              font-size: 0.8em;
+          .toolbar {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: inherit;
+
+            .pills {
+              .pill {
+                display: inline-block;
+                padding: 0.2em 0.5em;
+                margin: 0.2em;
+                border-radius: 0.2em;
+                color: $foreground-color;
+                font-size: 0.8em;
+              }
             }
-          }
 
-          .buttons {
-            padding: 5px 0 0 0;
+            .buttons {
+              padding: 5px 0 0 0;
 
-            a.button {
-              display: inline-block;
-              padding: 0.5em 0.5em;
-              margin: 0.2em;
-              border-radius: 0.2em;
-              background-color: $accent-color;
-              color: $foreground-color;
-              font-size: 0.8em;
-              text-decoration: none;
+              a.button {
+                display: inline-block;
+                padding: 0.5em 0.5em;
+                margin: 0.2em;
+                border-radius: 0.2em;
+                background-color: $accent-color;
+                color: $foreground-color;
+                font-size: 0.8em;
+                text-decoration: none;
 
-              &:hover {
-                background-color: darken($accent-color, 10%);
+                &:hover {
+                  background-color: darken($accent-color, 10%);
+                }
               }
             }
           }
@@ -143,5 +154,4 @@
       }
     }
   }
-
 }

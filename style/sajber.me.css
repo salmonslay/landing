@@ -97,7 +97,7 @@
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 1.5em auto;
   }
   ol.gallery li:after {
@@ -163,13 +163,16 @@
     max-width: 450px;
   }
   ol.gallery li figure figcaption {
-    padding: 0.8rem;
     height: 100%;
+    padding: 0.6rem 1rem;
+    position: relative;
+    box-sizing: border-box;
   }
-  ol.gallery li figure figcaption p {
+  ol.gallery li figure figcaption p, ol.gallery li figure figcaption h3 {
     margin: 0.5em 0;
   }
-  ol.gallery li figure figcaption p:first-child {
+  ol.gallery li figure figcaption h3 {
+    margin-top: 0;
     font-weight: bold;
     color: #ce4a5c;
   }
@@ -179,7 +182,12 @@
   ol.gallery li figure figcaption p.long-description {
     white-space: pre-wrap;
   }
-  ol.gallery li figure figcaption .pills .pill {
+  ol.gallery li figure figcaption .toolbar {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: inherit;
+  }
+  ol.gallery li figure figcaption .toolbar .pills .pill {
     display: inline-block;
     padding: 0.2em 0.5em;
     margin: 0.2em;
@@ -187,10 +195,10 @@
     color: #fff;
     font-size: 0.8em;
   }
-  ol.gallery li figure figcaption .buttons {
+  ol.gallery li figure figcaption .toolbar .buttons {
     padding: 5px 0 0 0;
   }
-  ol.gallery li figure figcaption .buttons a.button {
+  ol.gallery li figure figcaption .toolbar .buttons a.button {
     display: inline-block;
     padding: 0.5em 0.5em;
     margin: 0.2em;
@@ -200,7 +208,7 @@
     font-size: 0.8em;
     text-decoration: none;
   }
-  ol.gallery li figure figcaption .buttons a.button:hover {
+  ol.gallery li figure figcaption .toolbar .buttons a.button:hover {
     background-color: #b43143;
   }
 }
