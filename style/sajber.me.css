@@ -132,6 +132,35 @@
     height: 100%;
     position: relative;
   }
+  ol.gallery li figure .thumbnail-container .dots {
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    padding: 0.3em;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+  }
+  ol.gallery li figure .thumbnail-container .dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid white;
+  }
+  ol.gallery li figure .thumbnail-container .dots .dot:hover {
+    cursor: pointer;
+    background-color: #ce4a5c;
+  }
+  ol.gallery li figure .thumbnail-container .dots .dot.active {
+    background-color: #ce4a5c;
+  }
   ol.gallery li figure .thumbnail-container .arrow {
     position: absolute;
     bottom: 45%;

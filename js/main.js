@@ -78,6 +78,7 @@ function loadProjects() {
                 if (project.hidden)
                     return;
 
+                // create pills
                 let pillHtml = "";
                 for (let key in project.tags) {
                     project.tags[key].forEach(tag => {
@@ -85,6 +86,7 @@ function loadProjects() {
                     });
                 }
 
+                // create buttons
                 let buttonHtml = "";
                 project.links.forEach(link => {
                     // find icon whose name exists in the link title
@@ -103,17 +105,30 @@ function loadProjects() {
                     .replace(/[^a-zA-Z0-9\-]/g, "")
                     .toLowerCase();
 
-                document.getElementById("project-gallery").innerHTML +=
+                // add thumbnail to image list and add an index
+                project.index = 0;
+                if (!project.images)
+                    project.images = [];
+                project.images.unshift(project.thumbnail);
+
+                let projectHtml =
                     `
                     <li id="project-${projectId}">
                         <figure>
                             <div class="thumbnail-container">
                                 <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">
-                                ${project.images && project.images.length > 0 ? `
-                                <i class="fa-solid fa-chevron-left fa-xl arrow left-arrow" onclick="changeImage(true, '${projectId}');"></i>
-                                <i class="fa-solid fa-chevron-right fa-xl arrow right-arrow" onclick="changeImage(false, '${projectId}');"></i>
-                                ` : ``}
+                                
+                                <!-- add arrows & dots if there is more than one image -->
+                                ${project.images && project.images.length > 1 ? `
+                                    <i class="fa-solid fa-chevron-left fa-xl arrow left-arrow" onclick="changeImage(true, '${projectId}');"></i>
+                                    <i class="fa-solid fa-chevron-right fa-xl arrow right-arrow" onclick="changeImage(false, '${projectId}');"></i>
+                                    
+                                    <!-- add dots to make image switching easier -->
+                                    <div class="dots">
+                                        ${project.images.map((image, index) => `
+                                        <span class="dot" onclick="changeImageTo(${index}, '${projectId}');"></span>`).join("")}</div>` : ``}
                             </div>
+                            
                             <figcaption>
                                 <h3>
                                     ${project.starred ? `<!--<i title="Large / important project" class="fas fa-star"></i>-->` : ``} 
@@ -135,6 +150,14 @@ function loadProjects() {
                         </figure>
                     </li>
                     `
+
+                // strip away html-comments
+                projectHtml = projectHtml.replace(/<!--[\s\S]*?-->/g, "");
+
+                // add active to the first dot
+                projectHtml = projectHtml.replace(/class="dot"/, "class=\"dot active\"");
+
+                document.getElementById("project-gallery").innerHTML += projectHtml;
 
                 projects[projectId] = project;
             });
@@ -164,13 +187,6 @@ function changeImage(left, projectId) {
 
     console.log(`going ${left ? "left" : "right"} on project ${projectId}`);
 
-
-    if (project.index === undefined) // not switched before, add index & thumbnail to images array
-    {
-        project.index = 0;
-        project.images.unshift(project.thumbnail);
-    }
-
     project.index += left ? -1 : 1;
     if (project.index < 0)
         project.index = project.images.length - 1;
@@ -178,6 +194,24 @@ function changeImage(left, projectId) {
         project.index = 0;
 
     $(`#project-${projectId} .thumbnail`).attr("src", project.images[project.index]);
+
+    // update active dot
+    $(`#project-${projectId} .dot`).removeClass("active");
+    $(`#project-${projectId} .dot:nth-child(${project.index + 1})`).addClass("active");
+}
+
+function changeImageTo(index, projectId) {
+    let project = projects[projectId];
+
+    console.log(`going to image ${index} on project ${projectId}`);
+
+    project.index = index;
+
+    $(`#project-${projectId} .thumbnail`).attr("src", project.images[project.index]);
+
+    // update active dot
+    $(`#project-${projectId} .dot`).removeClass("active");
+    $(`#project-${projectId} .dot:nth-child(${project.index + 1})`).addClass("active");
 }
 
 function openPopup(id) {
