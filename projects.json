@@ -30,6 +30,35 @@
       ]
     },
     {
+      "title": "fruitwork",
+      "description": "Game engine written in C++ using the Simple DirectMedia Layer library. Features a scene system, a physics engine and multiple test scenes.",
+      "longDescription": "fruitwork is a game engine written in C++ using the SDL library. It was developed for around a month during my C/C++ course at Stockholm University. Doing everything from scratch was a great learning experience, and making a new, even better version of the engine is something I would like to do in the future.\n\nThe engine features a scene system, a physics engine and multiple test scenes. It has a solid UI system with support for labels, input fields, buttons and more.",
+      "thumbnail": "img/fruitwork.png",
+      "starred": true,
+      "school": true,
+      "markdown": "md/fruitwork.md",
+      "tags": {
+        "engine": [],
+        "language": [
+          "C++",
+          "Makefile"
+        ],
+        "framework": [
+          "SDL2"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/fruitwork"
+        },
+        {
+          "title": "Ex. implementation",
+          "url": "https://youtu.be/iygYWxroH_8"
+        }
+      ]
+    },
+    {
       "title": "svb!catch",
       "description": "Web game based on osu!. Contains 200+ full beatmaps with music, 8 mods, online profiles and a custom difficulty system.",
       "longDescription": "svb!catch is a browser rhythm game based made with plain JavaScript and an Express.js backend. Any beatmap available in osu! can be played in svb!catch, and the game contains five unique types of modifiers to spice up the gameplay.\n\nsvb!catch features online profiles via Discord OAuth 2.0, a custom difficulty system and online leaderboards. To optimize the game experience and performance, all thumbnails are automatically cropped and beatmaps are streamed from the server once you play or preview them.",
@@ -60,34 +89,6 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/SVB"
-        }
-      ]
-    },
-    {
-      "title": "fruitwork",
-      "description": "Game engine written in C++ using the Simple DirectMedia Layer library. Features a scene system, a physics engine and multiple test scenes.",
-      "longDescription": "fruitwork is a game engine written in C++ using the SDL library. It was developed for around 2 months during my C/C++ course at Stockholm University. Doing everything from scratch was a great learning experience, and making a new, even better version of the engine is something I would like to do in the future.\n\nThe engine features a scene system, a physics engine and multiple test scenes. It has a solid UI system with support for labels, input fields, buttons and more.",
-      "thumbnail": "img/fruitwork.png",
-      "starred": true,
-      "school": true,
-      "tags": {
-        "engine": [],
-        "language": [
-          "C++",
-          "Makefile"
-        ],
-        "framework": [
-          "SDL2"
-        ]
-      },
-      "links": [
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/fruitwork"
-        },
-        {
-          "title": "Ex. implementation",
-          "url": "https://youtu.be/iygYWxroH_8"
         }
       ]
     },

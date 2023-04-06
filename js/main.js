@@ -1,10 +1,17 @@
 window.onload = function () {
+    // set active page
     if (window.location.hash === "")
         setPage("projects");
     else
         setPage(window.location.hash.substring(1));
 
     loadProjects();
+
+    $('.popup').click(function (event) {
+        if ($(event.target).closest('.popup-content').length === 0) {
+            closePopup();
+        }
+    });
 };
 
 /**
@@ -121,6 +128,7 @@ function loadProjects() {
                                     </div>
                                     <div class="buttons">
                                         ${buttonHtml}
+                                        ${project.markdown ? `<a class="popup-button button" onclick="openPopup('project-${projectId}');">Read more...</a>` : ``}
                                     </div>
                                 </div>
                             </figcaption>
@@ -170,4 +178,24 @@ function changeImage(left, projectId) {
         project.index = 0;
 
     $(`#project-${projectId} .thumbnail`).attr("src", project.images[project.index]);
+}
+
+function openPopup(id) {
+    console.log(`opening popup ${id}`);
+    $(".popup").addClass('active');
+
+    // parse project markdown and add to popup
+    let project = projects[id.replace("project-", "")];
+    let div = $("#popup-content-html");
+    // load markdown file (project.markdown)
+    $.get(project.markdown, function (data) {
+        div.html(marked.parse(data));
+        hljs.highlightAll();
+    }).fail(function (error) {
+        div.html(`Something went wrong while loading the project description. That's awkward. <br> Error: ${error.statusText}`);
+    });
+}
+
+function closePopup() {
+    $(".popup").removeClass('active');
 }

@@ -56,13 +56,14 @@
         figcaption {
           padding: 0.8rem;
 
+          h3 {
+            margin: 0.2em auto;
+            font-weight: bold;
+            color: $accent-color;
+          }
+
           p {
             margin: 0.5em 0;
-
-            &:first-child {
-              font-weight: bold;
-              color: $accent-color;
-            }
 
             &.long-description {
               display: none;
@@ -82,6 +83,10 @@
 
           .buttons {
             padding: 5px 0 0 0;
+
+            .popup-button {
+              display: none !important;
+            }
 
             a.button {
               display: inline-block;

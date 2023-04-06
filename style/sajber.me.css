@@ -1,3 +1,4 @@
+@import "github-dark-dimmed.css";
 @media screen and (max-width: 767px) {
   ol.gallery {
     display: grid;
@@ -50,12 +51,13 @@
   ol.gallery li figure figcaption {
     padding: 0.8rem;
   }
-  ol.gallery li figure figcaption p {
-    margin: 0.5em 0;
-  }
-  ol.gallery li figure figcaption p:first-child {
+  ol.gallery li figure figcaption h3 {
+    margin: 0.2em auto;
     font-weight: bold;
     color: #ce4a5c;
+  }
+  ol.gallery li figure figcaption p {
+    margin: 0.5em 0;
   }
   ol.gallery li figure figcaption p.long-description {
     display: none;
@@ -70,6 +72,9 @@
   }
   ol.gallery li figure figcaption .buttons {
     padding: 5px 0 0 0;
+  }
+  ol.gallery li figure figcaption .buttons .popup-button {
+    display: none !important;
   }
   ol.gallery li figure figcaption .buttons a.button {
     display: inline-block;
@@ -97,7 +102,7 @@
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 1.5em auto;
   }
   ol.gallery li:after {
@@ -131,7 +136,7 @@
     position: absolute;
     bottom: 45%;
     color: white;
-    z-index: 999999;
+    z-index: 10;
     width: 42px;
     height: 42px;
     border-radius: 25%;
@@ -186,6 +191,9 @@
     position: absolute;
     bottom: 0;
     padding-bottom: inherit;
+    width: auto;
+    right: 15px;
+    left: 15px;
   }
   ol.gallery li figure figcaption .toolbar .pills .pill {
     display: inline-block;
@@ -197,19 +205,6 @@
   }
   ol.gallery li figure figcaption .toolbar .buttons {
     padding: 5px 0 0 0;
-  }
-  ol.gallery li figure figcaption .toolbar .buttons a.button {
-    display: inline-block;
-    padding: 0.5em 0.5em;
-    margin: 0.2em;
-    border-radius: 0.2em;
-    background-color: #ce4a5c;
-    color: #fff;
-    font-size: 0.8em;
-    text-decoration: none;
-  }
-  ol.gallery li figure figcaption .toolbar .buttons a.button:hover {
-    background-color: #b43143;
   }
 }
 html {
@@ -332,6 +327,53 @@ body .skill-page {
 }
 .icon-legend .icon-legend-item .icon-legend-item-text i {
   color: #ce4a5c;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  margin: 0.2em;
+  border-radius: 0.2em;
+  background-color: #ce4a5c;
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+a.button:hover {
+  background-color: #b43143;
+}
+a.button.popup-button {
+  right: 0;
+  position: absolute;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+.popup.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup .popup-content {
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 95%;
+  max-width: 1000px;
+  max-height: 80%;
+  overflow: auto;
+  border-radius: 15px;
 }
 
 .color-engine {
