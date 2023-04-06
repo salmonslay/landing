@@ -218,9 +218,12 @@ function openPopup(id) {
     console.log(`opening popup ${id}`);
     $(".popup").addClass('active');
 
+
     // parse project markdown and add to popup
     let project = projects[id.replace("project-", "")];
     let div = $("#popup-content-html");
+    div.html("Loading project...");
+
     // load markdown file (project.markdown)
     $.get(project.markdown, function (data) {
         div.html(marked.parse(data));
