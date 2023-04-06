@@ -30,10 +30,14 @@
       ]
     },
     {
-      "title": "fruitwork",
+      "title": "fruitwork (game engine)",
       "description": "Game engine written in C++ using the Simple DirectMedia Layer library. Features a scene system, a physics engine and multiple test scenes.",
       "longDescription": "fruitwork is a game engine written in C++ using the SDL library. It was developed for around a month during my C/C++ course at Stockholm University. Doing everything from scratch was a great learning experience, and making a new, even better version of the engine is something I would like to do in the future.\n\nThe engine features a scene system, a physics engine and multiple test scenes. It has a solid UI system with support for labels, input fields, buttons and more.",
-      "thumbnail": "img/fruitwork.png",
+      "thumbnail": "img/fruitwork-1.png",
+      "images": [
+        "img/fruitwork-2.png",
+        "img/fruitwork-3.png"
+      ],
       "starred": true,
       "school": true,
       "markdown": "md/fruitwork.md",
@@ -55,6 +59,35 @@
         {
           "title": "Ex. implementation",
           "url": "https://youtu.be/iygYWxroH_8"
+        }
+      ]
+    },
+    {
+      "title": "Dishooks",
+      "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
+      "longDescription": "Dishooks is a C# wrapper for the Discord webhook API. It has 100% coverage of the API, including attachments, embeds, TTS, custom avatars / usernames and message editing/deletion. Since everything is done through webhooks there is no requirement or need for a server or CDN.\n\nDishooks is a Unity asset and is available on the Unity Asset Store, with plans to maybe release it on NuGet in the future.",
+      "thumbnail": "img/dishooks.png",
+      "starred": true,
+      "school": false,
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          "Json.NET"
+        ]
+      },
+      "links": [
+        {
+          "title": "Unity Asset Store",
+          "url": "https://assetstore.unity.com/packages/tools/network/dishooks-send-discord-messages-from-your-game-171381"
+        },
+        {
+          "title": "Documentation",
+          "url": "https://sajber.me/dishooks"
         }
       ]
     },
@@ -89,70 +122,6 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/SVB"
-        }
-      ]
-    },
-    {
-      "title": "Dishooks",
-      "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
-      "longDescription": "Dishooks is a C# wrapper for the Discord webhook API. It has 100% coverage of the API, including attachments, embeds, TTS, custom avatars / usernames and message editing/deletion. Since everything is done through webhooks there is no requirement or need for a server or CDN.\n\nDishooks is a Unity asset and is available on the Unity Asset Store, with plans to maybe release it on NuGet in the future.",
-      "thumbnail": "img/dishooks.png",
-      "starred": true,
-      "school": false,
-      "tags": {
-        "engine": [
-          "Unity"
-        ],
-        "language": [
-          "C#"
-        ],
-        "framework": [
-          "Json.NET"
-        ]
-      },
-      "links": [
-        {
-          "title": "Unity Asset Store",
-          "url": "https://assetstore.unity.com/packages/tools/network/dishooks-send-discord-messages-from-your-game-171381"
-        },
-        {
-          "title": "Documentation",
-          "url": "https://sajber.me/dishooks"
-        }
-      ]
-    },
-    {
-      "title": "SajberSim",
-      "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
-      "longDescription": "SajberSim is a visual novel engine and browser made in Unity. It allows users to create full visual novels with custom characters, backgrounds, music and more using its custom scripting language.\n\nIt has Steam Workshop support and a built-in script debugger to ease the development process, and a built-in novel browser to allow users to easily download and play other people's novels.",
-      "thumbnail": "img/sajbersim.png",
-      "images": [
-        "img/sajbersim-0.png",
-        "img/sajbersim-1.png",
-        "img/sajbersim-2.png",
-        "img/sajbersim-3.png"
-      ],
-      "school": true,
-      "tags": {
-        "engine": [
-          "Unity"
-        ],
-        "language": [
-          "C#"
-        ],
-        "framework": [
-          "Steamworks",
-          "Json.NET"
-        ]
-      },
-      "links": [
-        {
-          "title": "GitHub",
-          "url": "https://github.com/LiterallyFabian/SajberSim"
-        },
-        {
-          "title": "Album",
-          "url": "https://imgur.com/a/wIY3a85"
         }
       ]
     },
@@ -209,6 +178,41 @@
         {
           "title": "GitHub",
           "url": "https://github.com/LiterallyFabian/SVB"
+        }
+      ]
+    },
+    {
+      "title": "SajberSim",
+      "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
+      "longDescription": "SajberSim is a visual novel engine and browser made in Unity. It allows users to create full visual novels with custom characters, backgrounds, music and more using its custom scripting language.\n\nIt has Steam Workshop support and a built-in script debugger to ease the development process, and a built-in novel browser to allow users to easily download and play other people's novels.",
+      "thumbnail": "img/sajbersim.png",
+      "images": [
+        "img/sajbersim-0.png",
+        "img/sajbersim-1.png",
+        "img/sajbersim-2.png",
+        "img/sajbersim-3.png"
+      ],
+      "school": true,
+      "tags": {
+        "engine": [
+          "Unity"
+        ],
+        "language": [
+          "C#"
+        ],
+        "framework": [
+          "Steamworks",
+          "Json.NET"
+        ]
+      },
+      "links": [
+        {
+          "title": "GitHub",
+          "url": "https://github.com/LiterallyFabian/SajberSim"
+        },
+        {
+          "title": "Album",
+          "url": "https://imgur.com/a/wIY3a85"
         }
       ]
     },
