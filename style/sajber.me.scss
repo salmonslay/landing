@@ -20,6 +20,14 @@ html {
   color: $accent-color;
 }
 
+.pronouns {
+  color: $text-secondary-color;
+
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 0;
+}
+
 .d-none {
   display: none !important;
 }

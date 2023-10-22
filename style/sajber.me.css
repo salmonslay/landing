@@ -244,6 +244,13 @@ html {
   color: #ce4a5c;
 }
 
+.pronouns {
+  color: #5f5f5f;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 0;
+}
+
 .d-none {
   display: none !important;
 }
