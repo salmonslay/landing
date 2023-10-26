@@ -12,6 +12,15 @@ window.onload = function () {
             closePopup();
         }
     });
+
+
+    // <3
+    if (window.location.hostname === "sofia.kiwi"){
+        $('.is-sofia').show();
+        $('.pronouns').show();
+        $('.not-sofia').hide();
+    }
+    document.title = window.location.hostname === "sofia.kiwi" ? "Sofia" : "Fabian" + " Lindgren | Home";
 };
 
 /**
