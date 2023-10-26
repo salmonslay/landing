@@ -20,7 +20,7 @@ window.onload = function () {
         $('.pronouns').show();
         $('.not-sofia').hide();
     }
-    document.title = window.location.hostname === "sofia.kiwi" ? "Sofia" : "Fabian" + " Lindgren | Home";
+    document.title = (window.location.hostname === "sofia.kiwi" ? "Sofia" : "Fabian") + " Lindgren | Home";
 };
 
 /**
