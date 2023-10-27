@@ -61,7 +61,6 @@ function setPage(page) {
 
 const buttonIcons = {
     "github": "fab fa-github",
-    "view": "fas fa-globe",
     "unity": "fab fa-unity",
     "documentation": "fas fa-book",
     "video": "fas fa-video",
@@ -69,9 +68,11 @@ const buttonIcons = {
     "trailer": "fa-solid fa-film",
     "album": "fa-solid fa-images",
     "steam": "fa-brands fa-steam",
-    "download": "fa-solid fa-download",
     "google play": "fa-brands fa-google-play",
     "blog": "fa-solid fa-feather-pointed",
+    "itch.io": "fa-brands fa-itch-io",
+    "view": "fas fa-globe",
+    "download": "fa-solid fa-download",
 }
 
 const projects = {};
