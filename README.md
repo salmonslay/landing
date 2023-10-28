@@ -36,7 +36,7 @@ The projects on the page are stored in the `projects.json` file. The structure i
     },
     {
       "title": "GitHub",
-      "url": "https://github.com/LiterallyFabian/SVB"
+      "url": "https://github.com/salmon/SVB"
     }
   ]
 }

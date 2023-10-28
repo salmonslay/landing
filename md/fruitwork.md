@@ -54,6 +54,6 @@ Every single component can have a physics body attached to them, giving them bot
 
 ### Example implementation
 
-To put my game engine to the test I decided to implement [osu!catch](https://osu.ppy.sh/home) in it, which is a rhythm game where you catch fruit that falls down the screen. My fruitwork implmentation has support for both osu! and osu!catch beatmaps (levels), and the source code can be found on [GitHub](https://github.com/LiterallyFabian/yuzu-catch).
+To put my game engine to the test I decided to implement [osu!catch](https://osu.ppy.sh/home) in it, which is a rhythm game where you catch fruit that falls down the screen. My fruitwork implmentation has support for both osu! and osu!catch beatmaps (levels), and the source code can be found on [GitHub](https://github.com/salmonslay/yuzu-catch).
 
 <iframe width="553" height="300" src="https://www.youtube.com/embed/iygYWxroH_8" title="Desktop 2023.01.02 - 12.45.10.08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
