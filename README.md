@@ -69,10 +69,11 @@ The tags are used to add badges to all projects by category. The following categ
 
 The links are shown as buttons on the project card. A link object only has two keys:
 
-| Key   | Value  | Description                              | Required |
-|-------|--------|------------------------------------------|----------|
-| title | string | The text to display on the button        | x        |
-| url   | string | The URL to open when pressing the button | x        |
+| Key   | Value  | Description                                                                          | Required |
+|-------|--------|--------------------------------------------------------------------------------------|----------|
+| title | string | The text to display on the button                                                    | x        |
+| url   | string | The URL to open when pressing the button                                             | x        |
+| icon  | string | An optional FontAwesome icon class that will replace the icon generated from `title` |          |
 
 All links have their own icon, which is determined by the title. If a title contains one of the following words, the corresponding icon will be used. If no icon is found, the default chain icon will be used. 
 

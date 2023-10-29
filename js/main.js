@@ -15,7 +15,7 @@ window.onload = function () {
 
 
     // <3
-    if (window.location.hostname === "sofia.kiwi"){
+    if (window.location.hostname === "sofia.kiwi") {
         $('.is-sofia').show();
         $('.pronouns').show();
         $('.not-sofia').hide();
@@ -99,12 +99,15 @@ function loadProjects() {
                 // create buttons
                 let buttonHtml = "";
                 project.links.forEach(link => {
+                    let hasIcon = link.icon !== undefined;
                     // find icon whose name exists in the link title
-                    let icon = "fa-solid fa-link";
-                    for (let key in buttonIcons) {
-                        if (link.title.toLowerCase().includes(key)) {
-                            icon = buttonIcons[key];
-                            break;
+                    let icon = hasIcon ? link.icon : "fa-solid fa-link";
+                    if (!hasIcon) {
+                        for (let key in buttonIcons) {
+                            if (link.title.toLowerCase().includes(key)) {
+                                icon = buttonIcons[key];
+                                break;
+                            }
                         }
                     }
                     buttonHtml += `<a class="button" href="${link.url}" target="_blank"><i class="${icon}"></i> ${link.title}</a>`;
