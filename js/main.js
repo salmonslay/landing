@@ -136,7 +136,7 @@ function loadProjects() {
                             <figcaption>
                                 <h3>
                                     ${project.starred ? `<!--<i title="Large / important project" class="fas fa-star"></i>-->` : ``} 
-                                    ${project.school ? `<i title="Project made for or in school" class="fa-solid fa-graduation-cap"></i>` : ``}
+                                    ${project.school ? `<!-- <i title="Project made for or in school" class="fa-solid fa-graduation-cap"></i>-->` : ``}
                                     ${project.title} 
                                 </h3> 
                                 <p class="short-description">${mdLinksToHtml(project.description)}</p>

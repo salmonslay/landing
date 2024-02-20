@@ -36,7 +36,7 @@
     },
     {
       "title": "SpaceLeek",
-      "description": "Space Leek is a charming and playful 3D-platformer with an emphasis on exploration and fast paced gameplay.",
+      "description": "A charming and playful 3D-platformer with an emphasis on exploration and fast paced gameplay.",
       "longDescription": "Space Leek is a charming and playful 3D-platformer with an emphasis on exploration and fast paced gameplay. The game is created in Unreal Engine 5 by me and eight friends, and took around two months of full-time work to complete.\n\nI have spent a lot of my time on the game's movement system, collectibles, the saving system and all the UI. A lot of my time was spent to make sure that the UI was responsive, and that it works well with both keyboard, controller or a mix of both.",
       "thumbnail": "img/spaceleek/sl0.png",
       "images": [
@@ -69,9 +69,46 @@
       ]
     },
     {
+      "title": "Sonder",
+      "description": "An online 2.5D puzzle adventure where two players engage in collaborative puzzle solving and dynamic combat.",
+      "longDescription": "Experience an innovative co-op adventure where two players have to work together. Engage in collaborative puzzle solving and dynamic combat with each player having unique abilities. Sonder is a psychological narrative that explores the essence of humanity.\n\nDuring the two months of full-time work on Sonder I was responsible for all the UI/UX design and implementation, multiplayer, localization, Steamworks, achievements and some gameplay mechanics. The artwork in the gallery is made by [Nora Gate](https://www.artstation.com/noragate).",
+      "thumbnail": "img/sonder/banner.png",
+      "images": [
+        "img/sonder/screenshot1.png",
+        "img/sonder/screenshot2.png",
+        "img/sonder/screenshot3.png",
+        "img/sonder/screenshot4.png",
+        "img/sonder/screenshot5.png"
+      ],
+      "starred": true,
+      "school": true,
+      "tags": {
+        "engine": [
+          "Unreal Engine 5"
+        ],
+        "language": [
+          "C++",
+          "Blueprint"
+        ],
+        "framework": [
+          "Steamworks"
+        ]
+      },
+      "links": [
+        {
+          "title": "Steam",
+          "url": "https://store.steampowered.com/app/2692570/Sonder/"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/salmonslay/Sonder"
+        }
+      ]
+    },
+    {
       "title": "Dishooks",
       "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
-      "longDescription": "Dishooks is a C# wrapper for the Discord webhook API. It has 100% coverage of the API, including attachments, embeds, TTS, custom avatars / usernames and message editing/deletion. Since everything is done through webhooks there is no requirement or need for a server or CDN.\n\nDishooks is a Unity asset and is available on the Unity Asset Store, with plans to maybe release it on NuGet in the future.",
+      "longDescription": "A C# wrapper for the Discord webhook API. It has 100% coverage of the API, including attachments, embeds, TTS, custom avatars / usernames and message editing/deletion. Since everything is done through webhooks there is no requirement or need for a server or CDN.\n\nDishooks is a Unity asset and is available on the Unity Asset Store, with plans to maybe release it on NuGet in the future.",
       "thumbnail": "img/dishooks.png",
       "markdown": "md/dishooks.md",
       "starred": true,
@@ -101,7 +138,7 @@
     {
       "title": "SUMMER Runway",
       "description": "Player vs. player fashion game made with Unity where players are competing to mimic the \"currently trending\" outfit.",
-      "longDescription": "SUMMER Runway is a player vs. player fashion game made with Unity where players are competing to mimic the \"currently trending\" outfit. The game was made for a game jam, and was made in around 48 hours.\n\nThe game supports local multiplayer with up to two players that could either play with controllers or on the same keyboard.",
+      "longDescription": "A player vs. player fashion game made with Unity where players are competing to mimic the \"currently trending\" outfit. The game was made for a game jam together with [Ella Olson](https://www.linkedin.com/in/ella-olsson-026142271/), and was made in around 48 hours.\n\nThe game supports local multiplayer with up to two players that could either play with controllers or on the same keyboard. Both the music and the amazing characters were created by Ella, while the remaining visuals and programming were done together. \n",
       "thumbnail": "img/summer.png",
       "images": [
         "img/summer/1.png",
@@ -120,18 +157,19 @@
       },
       "links": [
         {
-          "title": "Download",
+          "title": "View / download on itch.io",
           "url": "https://lavendersalmon.itch.io/summer-runway"
-        },{
+        },
+        {
           "title": "Trailer",
-            "url": "https://youtu.be/iva1U4hRMaQ"
+          "url": "https://youtu.be/iva1U4hRMaQ"
         }
       ]
     },
     {
       "title": "Scareware",
       "description": "Scareware is a game made for the 2023 DSV game jam. It's a WarioWare-inspired game where you have to complete a series of mini games that progressively get faster.",
-      "longDescription": "Scareware is a WarioWare-inspired game made for the 2023 DSV game jam together with [Nora Gate](https://www.artstation.com/noragate). It was made in Unity in roughly three days and contains ten unique mini games that can be played using only the arrow keys.\n\nI did all the programming in the project and had lots of fun while doing so. The game has a very robust object-oriented architecture and is easily expandable with new mini games - some of them only took a few minutes to implement once the drawn assets were ready!",
+      "longDescription": "WarioWare-inspired game made for the 2023 DSV game jam together with [Nora Gate](https://www.artstation.com/noragate). It was made in Unity in roughly three days and contains ten unique mini games that can be played using only the arrow keys.\n\nI did all the programming in the project and had lots of fun while doing so. The game has a very robust object-oriented architecture and is easily expandable with new mini games - some of them only took a few minutes to implement once the drawn assets were ready!",
       "thumbnail": "img/scareware/1.png",
       "images": [
         "img/scareware/4.png",
@@ -159,7 +197,7 @@
     {
       "title": "Galtaker",
       "description": "Sokoban-inspired Unity game made for a game jam. Features localization with Crowdin, Steam achievements and an art gallery.",
-      "longDescription": "Galtaker is a Sokoban-inspired puzzle game I made in Unity for the DSV game jam together with [Nora Gate](https://www.artstation.com/noragate) (we won 🥳). We have since then expanded the game with plans to release it on Steam.\n\nThe game features localization with Crowdin, Steam achievements through Steamworks and an art gallery, and has 15 levels. It has a built-in level editor, and the game is fully playable with a keyboard, controller or touch screen.",
+      "longDescription": "A a Sokoban-like puzzle game I made in Unity for the DSV game jam together with [Nora Gate](https://www.artstation.com/noragate) (we won 🥳). We have since then expanded the game with plans to release it on Steam.\n\nThe game features localization with Crowdin, Steam achievements through Steamworks and an art gallery, and has 15 levels. It has a built-in level editor, and the game is fully playable with a keyboard, controller or touch screen.",
       "thumbnail": "img/galtaker.png",
       "images": [
         "img/galtaker2.png"
