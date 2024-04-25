@@ -2,6 +2,19 @@
 <html lang="EN">
 
 <head>
+    <script>
+        // Load the projects in-line to speed up things
+        let request = new XMLHttpRequest();
+        let data = undefined;
+        request.open("GET", "projects.json", true);
+        request.onload = function () {
+            if (request.status >= 200 && request.status < 400) {
+                data = JSON.parse(request.responseText);
+            }
+        }
+        request.send();
+    </script>
+
     <meta charset="utf-8">
     <title>Home</title>
     <meta name="description" content="">

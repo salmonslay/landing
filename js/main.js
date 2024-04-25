@@ -5,13 +5,24 @@ window.onload = function () {
     else
         setPage(window.location.hash.substring(1));
 
-    loadProjects();
 
     $('.popup').click(function (event) {
         if ($(event.target).closest('.popup-content').length === 0) {
             closePopup();
         }
     });
+
+    // Wait for the projects to be loaded (data)
+    let attempts = 0;
+    const readyListener = () => {
+        if (data !== undefined) {
+            return loadProjects();
+        } else {
+            attempts++;
+        }
+        return setTimeout(readyListener, attempts < 200 ? 25 : 250);
+    };
+    readyListener();
 };
 
 /**
@@ -69,54 +80,48 @@ const buttonIcons = {
 const projects = {};
 
 function loadProjects() {
-    // get json file projects.json
-    let request = new XMLHttpRequest();
-    request.open("GET", "projects.json", true);
-    request.onload = function () {
-        if (request.status >= 200 && request.status < 400) {
-            let data = JSON.parse(request.responseText);
-            data.projects.forEach(project => {
-                if (project.hidden)
-                    return;
+    data.projects.forEach(project => {
+        if (project.hidden)
+            return;
 
-                // create pills
-                let pillHtml = "";
-                for (let key in project.tags) {
-                    project.tags[key].forEach(tag => {
-                        pillHtml += `<span class="pill color-${key}">${tag}</span>`;
-                    });
-                }
+        // create pills
+        let pillHtml = "";
+        for (let key in project.tags) {
+            project.tags[key].forEach(tag => {
+                pillHtml += `<span class="pill color-${key}">${tag}</span>`;
+            });
+        }
 
-                // create buttons
-                let buttonHtml = "";
-                project.links.forEach(link => {
-                    let hasIcon = link.icon !== undefined;
-                    // find icon whose name exists in the link title
-                    let icon = hasIcon ? link.icon : "fa-solid fa-link";
-                    if (!hasIcon) {
-                        for (let key in buttonIcons) {
-                            if (link.title.toLowerCase().includes(key)) {
-                                icon = buttonIcons[key];
-                                break;
-                            }
-                        }
+        // create buttons
+        let buttonHtml = "";
+        project.links.forEach(link => {
+            let hasIcon = link.icon !== undefined;
+            // find icon whose name exists in the link title
+            let icon = hasIcon ? link.icon : "fa-solid fa-link";
+            if (!hasIcon) {
+                for (let key in buttonIcons) {
+                    if (link.title.toLowerCase().includes(key)) {
+                        icon = buttonIcons[key];
+                        break;
                     }
-                    buttonHtml += `<a class="button" href="${link.url}" target="_blank"><i class="${icon}"></i> ${link.title}</a>`;
-                });
+                }
+            }
+            buttonHtml += `<a class="button" href="${link.url}" target="_blank"><i class="${icon}"></i> ${link.title}</a>`;
+        });
 
-                // a project id is the project title with all non-alphanumeric characters removed and spaces replaced with dashes
-                let projectId = project.title.replace(/ /g, "-")
-                    .replace(/[^a-zA-Z0-9\-]/g, "")
-                    .toLowerCase();
+        // a project id is the project title with all non-alphanumeric characters removed and spaces replaced with dashes
+        let projectId = project.title.replace(/ /g, "-")
+            .replace(/[^a-zA-Z0-9\-]/g, "")
+            .toLowerCase();
 
-                // add thumbnail to image list and add an index
-                project.index = 0;
-                if (!project.images)
-                    project.images = [];
-                project.images.unshift(project.thumbnail);
+        // add thumbnail to image list and add an index
+        project.index = 0;
+        if (!project.images)
+            project.images = [];
+        project.images.unshift(project.thumbnail);
 
-                let projectHtml =
-                    `
+        let projectHtml =
+            `
                     <li id="project-${projectId}">
                         <figure>
                             <div class="thumbnail-container">
@@ -155,24 +160,17 @@ function loadProjects() {
                     </li>
                     `
 
-                // strip away html-comments
-                projectHtml = projectHtml.replace(/<!--[\s\S]*?-->/g, "");
+        // strip away html-comments
+        projectHtml = projectHtml.replace(/<!--[\s\S]*?-->/g, "");
 
-                // add active to the first dot
-                projectHtml = projectHtml.replace(/class="dot"/, "class=\"dot active\"");
+        // add active to the first dot
+        projectHtml = projectHtml.replace(/class="dot"/, "class=\"dot active\"");
 
-                document.getElementById("project-gallery").innerHTML += projectHtml;
+        document.getElementById("project-gallery").innerHTML += projectHtml;
 
-                projects[projectId] = project;
-            });
-            document.getElementById("loading").remove();
-
-        } else {
-            document.getElementById("loading").innerHTML = "Error loading projects. That's awkward.";
-        }
-    }
-
-    request.send();
+        projects[projectId] = project;
+    });
+    document.getElementById("loading").remove();
 }
 
 function mdLinksToHtml(md) {
