@@ -15,7 +15,7 @@ window.onload = function () {
     // Wait for the projects to be loaded (data)
     let attempts = 0;
     const readyListener = () => {
-        if (data !== undefined) {
+        if (typeof data !== 'undefined') {
             return loadProjects();
         } else {
             attempts++;
