@@ -101,7 +101,7 @@
     {
       "title": "Sonder",
       "description": "An online 2.5D puzzle adventure where two players engage in collaborative puzzle solving and dynamic combat.",
-      "longDescription": "Experience an innovative co-op adventure where two players have to work together. Engage in collaborative puzzle solving and dynamic combat with each player having unique abilities. Sonder is a psychological narrative that explores the essence of humanity.\n\nDuring the two months of full-time work on Sonder I was responsible for all the UI/UX design and implementation, multiplayer, localization, Steamworks, achievements and some gameplay mechanics. The artwork in the gallery is made by [Nora Gate](https://www.artstation.com/noragate).",
+      "longDescription": "Experience an innovative co-op adventure where two players have to work together.\n\nDuring the two months of full-time work on Sonder I was responsible for all the UI/UX design and implementation, multiplayer, localization, Steamworks, achievements and some gameplay mechanics. The artwork in the gallery is made by [Nora Gate](https://www.artstation.com/noragate).\n\nAs of May 2024, Sonder has been <b>played over 52 000 times on Steam</b>.",
       "thumbnail": "img/sonder/banner.webp",
       "images": [
         "img/sonder/screenshot1.webp",
