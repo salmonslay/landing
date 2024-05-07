@@ -54,8 +54,9 @@ The projects on the page are stored in the `projects.json` file. The structure i
 | longDescription | string   | A long description for the project. Only displayed on desktop. Supports markdown                  | x        |
 | thumbnail       | string   | The path to the thumbnail image. It should be in roughly a **8:5 aspect ratio** or **600x380px**. | x        |
 | images          | string[] | An array with additional image paths that the user can scroll between.                            |          |
-| starred         | bool     | Whether to show a star icon on the card                                                           |          |
-| school          | bool     | Whether to show a school icon on the card                                                         |          |
+| hidden          | boolean  | If true, the project will not be displayed in the list by default.                                |          |
+| starred         | boolean  | Whether to show a star icon on the card                                                           |          |
+| school          | boolean  | Whether to show a school icon on the card                                                         |          |
 | tags            | object   | An object containing the tags for the project. See [below](#tags) for more information.           | x        |
 | links           | object[] | A list of links for the project. See [below](#links) for more information.                        | x        |
 | markdown        | string   | A path to a markdown file. Projects with this will get a "Read more" button to the markdown.      |          |
