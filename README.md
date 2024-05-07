@@ -2,9 +2,9 @@
 
 This is my personal landing page for my projects and other stuff. It follows a portfolio / CV style and is built with pure HTML, JavaScript and SCSS. No frameworks or libraries are used. The only dependency is the [Font Awesome](https://fontawesome.com/) icon font.
 
-## Using the template
+## License / Using the template
 
-Feel free to use the template for your own landing page. Just fork the repository and change the content to your needs.
+MIT. Feel free to use the template for your own landing page. Just fork the repository and change the content to your needs.
 
 ### JSON structure
 
@@ -14,7 +14,12 @@ The projects on the page are stored in the `projects.json` file. The structure i
 {
   "title": "svb!catch",
   "description": "Web game based on osu!. Contains 200+ full beatmaps with music, 8 mods, online profiles and a custom difficulty system.",
+  "longDescription": "An even longer description not shown in the README to save some space.",
   "thumbnail": "img/svb!catch.png",
+  "images": [
+    "img/svb!catch-0.webp",
+    "img/svb!catch-1.webp"
+  ],
   "starred": true,
   "school": false,
   "tags": {
